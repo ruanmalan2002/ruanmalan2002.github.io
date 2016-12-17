@@ -1,0 +1,13 @@
+ruanmalan2002.github.io
+Github http://151.101.100.133/
+
+GoDddy initial A record for meetup.online 
+   Type / Name / Value
+   A    / @    / 50.63.202.34
+
+Changed to GitHub's 151.101.100.133
+
+But ping meetup.online then resolves to 185.53.178.8
+https://meetup.online/index.html is not valid https and 
+http://meetup.online/index.html then redirects to rubbish
+
