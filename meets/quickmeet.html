@@ -39,9 +39,224 @@
   </head>
 <!-- NAVBAR ================================================== -->
   <body>
-    <h2>Schedule a quick meeting</h2>
-    <table>
-      <tr><th>Email</th><th>Person</th><th>Place</th><th>Timezone</th><th>Time</th></tr>
-    </table>
+
+<div class="container">
+   <h2>Schedule a quick meeting</h2>
+    <form>
+      <table width="100%" style="border-collapse: separate;border:5;">
+        <tr><th>&nbsp;&nbsp;&nbsp;</th><th>Person&nbsp;</th><th>Place&nbsp;</th><th>Time&nbsp;</th><th>Timezone</th><th>Email&nbsp;</th></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;</td><td><input type="text" value="Ruan" /></td><td><input type="text" value="NZ"/></td><td><input type="time" id="time1' name="time1" value="14:00"/></td>
+          <td>
+            <select name="timezone1">
+        <option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
+                    <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
+                    <option value="-10" >(GMT -10:00) Hawaii</option>
+                    <option value="-9"  >(GMT -9:00) Alaska</option>
+                    <option value="-8"  >(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                    <option value="-7"  >(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                    <option value="-6"  >(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                    <option value="-5" >(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                    <option value="-4.5">(GMT -4:30) Caracas</option>
+                    <option value="-4"  >(GMT -4:00) Atlantic Time (Canada), La Paz, Santiago</option>
+                    <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                    <option value="-3"  >(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                    <option value="-2"  >(GMT -2:00) Mid-Atlantic</option>
+                    <option value="-1"  >(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                    <option value="0"  >(GMT) Western Europe Time, London, Lisbon</option>
+                    <option value="1"   >(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                    <option value="2" >(GMT +2:00) Kaliningrad, South Africa, Cairo</option>
+                    <option value="3"   >(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                    <option value="3.5" >(GMT +3:30) Tehran</option>
+                    <option value="4"   >(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi</option>
+                    <option value="4.5" >(GMT +4:30) Kabul</option>
+                    <option value="5"   >(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                    <option value="5.5" >(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi</option>
+                    <option value="5.75">(GMT +5:45) Kathmandu</option>
+                    <option value="6"   >(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                    <option value="6.5" >(GMT +6:30) Yangon, Cocos Islands</option>
+                    <option value="7"   >(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                    <option value="8"   >(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                    <option value="9"   >(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                    <option value="9.5" >(GMT +9:30) Adelaide, Darwin</option>
+                    <option value="10"  >(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                    <option value="11"  >(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                    <option value="12" selected="selected"  >(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+      </select>
+          </td>
+          <td><div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <input class="form-control" type="text" placeholder="Email address" value="ruan.malan@somewhere.com">
+</div></td></tr>
+        <tr><td><a class="btn btn-danger" href="#">
+  <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Andrè" /></td><td><input type="text" value="NY"/><td><input type="time" id="time2' name="time2" value=""/></td>
+          <td>
+            <select name="timezone2">
+    		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
+                    <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
+                    <option value="-10" >(GMT -10:00) Hawaii</option>
+                    <option value="-9"  >(GMT -9:00) Alaska</option>
+                    <option value="-8"  >(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                    <option value="-7"  >(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                    <option value="-6"  >(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                    <option value="-5" selected="selected" >(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                    <option value="-4.5">(GMT -4:30) Caracas</option>
+                    <option value="-4"  >(GMT -4:00) Atlantic Time (Canada), La Paz, Santiago</option>
+                    <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                    <option value="-3"  >(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                    <option value="-2"  >(GMT -2:00) Mid-Atlantic</option>
+                    <option value="-1"  >(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                    <option value="0"  >(GMT) Western Europe Time, London, Lisbon</option>
+                    <option value="1"   >(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                    <option value="2"   >(GMT +2:00) Kaliningrad, South Africa, Cairo</option>
+                    <option value="3"   >(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                    <option value="3.5" >(GMT +3:30) Tehran</option>
+                    <option value="4"   >(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi</option>
+                    <option value="4.5" >(GMT +4:30) Kabul</option>
+                    <option value="5"   >(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                    <option value="5.5" >(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi</option>
+                    <option value="5.75">(GMT +5:45) Kathmandu</option>
+                    <option value="6"   >(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                    <option value="6.5" >(GMT +6:30) Yangon, Cocos Islands</option>
+                    <option value="7"   >(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                    <option value="8"   >(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                    <option value="9"   >(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                    <option value="9.5" >(GMT +9:30) Adelaide, Darwin</option>
+                    <option value="10"  >(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                    <option value="11"  >(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                    <option value="12"  >(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+    	</select>
+          </td>
+          <td><div class="input-group margin-bottom-sm">
+  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <input class="form-control" type="text" placeholder="Email address" value="andre.bothma@somewhere.com">
+</div></td></tr>
+          <tr><td><a class="btn btn-danger" href="#">
+    <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Jeroen" /></td><td><input type="text" value="Ireland"/><td><input type="time" id="time3' name="time3" value=""/></td>
+            <td>
+              <select name="timezone3">
+      		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
+                      <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
+                      <option value="-10" >(GMT -10:00) Hawaii</option>
+                      <option value="-9"  >(GMT -9:00) Alaska</option>
+                      <option value="-8"  >(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                      <option value="-7"  >(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                      <option value="-6"  >(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                      <option value="-5" >(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                      <option value="-4.5">(GMT -4:30) Caracas</option>
+                      <option value="-4"  >(GMT -4:00) Atlantic Time (Canada), La Paz, Santiago</option>
+                      <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                      <option value="-3"  >(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                      <option value="-2"  >(GMT -2:00) Mid-Atlantic</option>
+                      <option value="-1"  >(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                      <option value="0" selected="selected"  >(GMT) Western Europe Time, London, Lisbon</option>
+                      <option value="1"   >(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                      <option value="2"   >(GMT +2:00) Kaliningrad, South Africa, Cairo</option>
+                      <option value="3"   >(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                      <option value="3.5" >(GMT +3:30) Tehran</option>
+                      <option value="4"   >(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi</option>
+                      <option value="4.5" >(GMT +4:30) Kabul</option>
+                      <option value="5"   >(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                      <option value="5.5" >(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi</option>
+                      <option value="5.75">(GMT +5:45) Kathmandu</option>
+                      <option value="6"   >(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                      <option value="6.5" >(GMT +6:30) Yangon, Cocos Islands</option>
+                      <option value="7"   >(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                      <option value="8"   >(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                      <option value="9"   >(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                      <option value="9.5" >(GMT +9:30) Adelaide, Darwin</option>
+                      <option value="10"  >(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                      <option value="11"  >(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                      <option value="12"  >(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+      	</select>
+            </td>
+            <td><div class="input-group margin-bottom-sm">
+    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <input class="form-control" type="text" placeholder="Email address" value="jeroen.roodbol@somewhere.com">
+  </div></td></tr>
+            <tr><td><a class="btn btn-danger" href="#">
+      <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Wynand" /></td><td><input type="text" value="South Africa"/><td><input type="time" id="time4' name="time4" value=""/></td>
+              <td>
+                <select name="timezone4">
+        		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
+                        <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
+                        <option value="-10" >(GMT -10:00) Hawaii</option>
+                        <option value="-9"  >(GMT -9:00) Alaska</option>
+                        <option value="-8"  >(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                        <option value="-7"  >(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                        <option value="-6"  >(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                        <option value="-5" >(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                        <option value="-4.5">(GMT -4:30) Caracas</option>
+                        <option value="-4"  >(GMT -4:00) Atlantic Time (Canada), La Paz, Santiago</option>
+                        <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                        <option value="-3"  >(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                        <option value="-2"  >(GMT -2:00) Mid-Atlantic</option>
+                        <option value="-1"  >(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                        <option value="0"  >(GMT) Western Europe Time, London, Lisbon</option>
+                        <option value="1"   >(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                        <option value="2" selected="selected"   >(GMT +2:00) Kaliningrad, South Africa, Cairo</option>
+                        <option value="3"   >(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                        <option value="3.5" >(GMT +3:30) Tehran</option>
+                        <option value="4"   >(GMT +4:00) Abu Dhabi, Muscat, Yerevan, Baku, Tbilisi</option>
+                        <option value="4.5" >(GMT +4:30) Kabul</option>
+                        <option value="5"   >(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                        <option value="5.5" >(GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi</option>
+                        <option value="5.75">(GMT +5:45) Kathmandu</option>
+                        <option value="6"   >(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                        <option value="6.5" >(GMT +6:30) Yangon, Cocos Islands</option>
+                        <option value="7"   >(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                        <option value="8"   >(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                        <option value="9"   >(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                        <option value="9.5" >(GMT +9:30) Adelaide, Darwin</option>
+                        <option value="10"  >(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                        <option value="11"  >(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                        <option value="12"  >(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+        	</select>
+              </td>
+              <td><div class="input-group margin-bottom-sm">
+      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+      <input class="form-control" type="text" placeholder="Email address" value="wynand.boshof@somewhere.com">
+    </div></td></tr>
+      </table>
+
+    <div style="margin:0; border:0; background-color:rgba(128, 128, 128, 0.12);">
+      <h3>Meeting Information</h3>
+      <table width="100%" >
+        <tr><th width=30%>UTC Time</th><td><input type="time" id=timeGTM/></td></tr>
+        <tr><th width=30%>Type</th><td>
+          <select>
+            <option>Skype</option>
+            <option>WebEx</option>
+            <option>Google Hangouts</option>
+            <option>Avaya</option>
+            <option>Spreecast</option>
+            <option>Ustream</option>
+            <option>GoToMeeting</option>
+            <option>Zoom</option>
+            <option>UberMeeting</option>
+            <option>GoToMeeting</option>
+            <option>BlueJeans</option>
+            <option>AdobeConnect</option>
+            <option>TeamViewer</option>
+            <option>Anymeeting</option>
+            <option>Fuze</option>
+            <option>Other</option>
+          </select>
+        </td><td>
+          <a>Help me choose</a>
+        </td></tr>
+        <tr><th width=30%>Address</th><td><input type="text" value="ruanmalannz"></input></td></tr>
+        <tr><th width=30%>Notes</th><td><input type="text" value="https://docs.google..."></td></tr>
+        <tr>
+          <td>
+            <input type="submit" name="Invite attendees" />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+    </form>
+
+  </div>
 
   </body>
