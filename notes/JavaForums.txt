@@ -1,0 +1,110 @@
+http://www.forummatrix.org/search.php
+Calendar
+Free and Open Source
+Plugins
+Postgres
+UTF-8 Support
+Rating/Karma System
+
+
+FUDforum, HaveFnuBB!, MyBB, SMF
+
+========================================================
+FUDForum
+8.7 user, 8 reviewer
+Most features on matrix
+FUDforum, or Fast Uncompromising Discussion Forum is a complete forum package, with a quite impressive list of features. Its developers insisted on the ease of use of its administration panel and on the general usability of the forum.
+PHP, many DBc calendar, most features, recent release
+--------------------------------------------------
+MyBB http://www.forum-software.org/mybb/review
+Users rated 9.2 and reviewer 9/10
+Open source, has calendar
+Also has portal, Wiki, many social networks, manu plugins and themes
+Three Db options for postgresql / mysql /SQLlite
+Recent release at 21 Dec 2016
+https://mybb.com/download/
+--------------------
+SMF Simple machines
+All the main features
+Good features and 9 reviewer rating but 4.5/10 user rating. Comments dont bear out apart from default theming not pretty
+Easy to learn
+----------------
+
+JForum  http://jforum.net/
+This is among the robust and powerful multithreaded forum software that doesn’t rely on database with a discussion board developed in java. jForum is simple to use because its administrative panel is user friendly making it an effective forum engine which gives you unrestricted forum solutions, email notification, categories, topics and personal messages that provide you immediate update regarding your topics then ranking them  using the user rankings. This software has a clean design; as well, its implementation makes JForum simple to extend and customize.
+Notes: Tomcat Webapp, used by EA and JavaRanch
+No calendar?
+----------------
+Php BB 3.0 http://www.forum-software.org/phpbb3/review
+Users 8.4 / 10, reviewer 4/5
+No calendar?
+
+====================================================================================
+EXCLUDED
+
+-------------------------------------
+Exo platform - https://en.wikipedia.org/wiki/Comparison_of_Internet_forum_software
+Java, open source, calendar, collaboration, but SAAS
+
+
+----------------------------
+XenForo - Not FREE-
+http://www.forum-software.org/xenforo/review
+PHP, 5/5 in forum-software, 7.5 users, no email, topics, related threads,
+----------------------------------
+Woltlab http://www.forum-software.org/woltlab-burning-board/review
+LAMP based only
+Free part Woltlab core suite LGPL, but not usable on own:
+Commercial cheap, indefinate per version, forum and calendar added,  customisable?
+Has calendar, no missing features.
+---------------
+
+IP Board  Not FREE-
+http://www.forum-software.org/ipboard/review
+PHP, 5/5 in forum-software, 7.3 users, 
+---------------
+Google Groups - starter option?
+
+
+
+HaveFnuBB!(obscure, not updated in 5 years?, mostly French documentation)
+
+JavaBB  Inaccessible--(No download link) Tech+( Spring, Velocity, Hibernate and WebWork)
+This forum software developed in java has a discussion board that is specifically designed to develop communities. JavaBB features include watch topic, flood control, forum category, customizable CSS layouts, announcements and Sticky posts, locked threads, BBcode, personal messaging system, member list and pagination system among others.
+JavaBB is a software based on Java, developed specifically with intention to join communities. Based in phpbb, we are working pledged by the success of phpBB, to become javaBB so efficient as it.
+
+JForumFusion Old-(site down)
+JForumFusion is a platform independent discussion board program. Some of it main features include: support of unlimited discussion forums, topics and member, threaded or linear discussions, file attachments, private messaging, web based administrative tools, UBBCode, multiple authentication sources, and high performance search engine. 
+
+6.hipergate – java based CRM and groupware software    Old-(last update 3.5 years)
+hIpergate is a free and open source java based CRM and Groupware software that include various types of tools and services such as sales automation, customer service, intranet, email marketing, content management, bug tracker, project manager, social networks integration, webmail, calendar, forums and file sharing services. Hipergate provide support for all major database backend such as PostgreSQL, Oracle and SQL Server. – hipergate java CRM and groupware
+
+
+7.LibreSource OldTech-(Jonas,Subversion)  Old-(site down)
+LibreSource is an open source, highly customizable, modular collaborative development platform for web portals, groupware, e-archiving and Web publishing. The platform is written in Java and provide all the necessary tools to share and communicate within your project teams under one centralize place. it reduced project cost and improve the coordination between projects and team members. – LibreSource
+
+The platform written in Java/J2EE, it’s a modular web server that users can customize online by combining resources and rights: wiki pages, forum, trackers, Synchronizers, Subversion repositories, files, download areas, drop boxes, forms, etc. it uses most of the advanced services provided by the OW2 application server called JOnAS.
+
+LibreSource is perfect collaborative development platform for the developer or designer who doesn’t want to learn lots of technical jargon and wants to focus more on communication with the project’s members.
+
+Features of LibreSource
+1.Modular and extensible collaborative platform based on resources
+2.multi-users multi-teams multi-projects multi-purposes platform
+3.Inline Administration : content edited directly in the page
+4.hierarchical flexible resource structure
+5.Configuration management
+6.Accurate access rights management
+7.easy navigation on the platform
+8.expendable, multi-levels site map
+9.full text search, wildcard char support by Lucene
+10.integrates a Jabber instant messaging in order to know who is online and to directly exchange messages.
+11.user notification via email, Jabber, RSS
+12.HTTPS encryption of the pages
+13.Create, Read, Update and Delete rights
+14.import/export in XML of any subset of the hierarchical resource structure
+15.UTF8 support for international content
+16.Uniform Resource Identifier (URI)
+17.Wiki editable description and web pages
+18.Easy to create, update, move or delete any resource
+
+
