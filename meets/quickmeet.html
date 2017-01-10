@@ -39,14 +39,17 @@
 
     <script>
 
-    function time_from_utc() {
+    function time_from_utc(time2, timezone2) {
       //alert('pos1');
+      //var timezone2="timezone2";
+      //var time2="time2";
+
       var date_diff = document.getElementById("timeUTCDate").value;
       var timeUTC=document.getElementById("timeUTC").value.substr(0,2);
       var timeMin=document.getElementById("timeUTC").value.substr(2,5);
       //alert('pos2');
 
-      var timezone2Val=document.getElementById("timezone2").value;
+      var timezone2Val=document.getElementById(timezone2).value;
       //alert('pos3');
 
       //alert(timezone2Val);
@@ -70,9 +73,9 @@
         calc_value = calc_value.toString()+timeMin;
       }
       //alert(calc_value);
-      alert('pos10');
+      //alert('pos10');
 
-      document.getElementById("time2").value=calc_value.toString();
+      document.getElementById(time2).value=calc_value.toString();
     }
 
 
@@ -107,8 +110,10 @@
       document.getElementById("timeUTC").value=calc_value;
       document.getElementById("timeUTCDate").value=date_diff.toString();
       //alert('calling');
-      time_from_utc();
-      alert('called');
+      time_from_utc("time2","timezone2");
+      time_from_utc("time3","timezone3");
+      time_from_utc("time4","timezone4");
+      //alert('called');
     }
 
 
@@ -164,9 +169,9 @@
         <tr><td>&nbsp;&nbsp;&nbsp;</td>
           <td><input type="text" value="Ruan" /></td>
           <td><input type="text" value="NZ"/></td>
-          <td><input type="time" id="time1" name="time1" value="14:00" onchange='time_to_utc(document);'/></td>
+          <td><input type="time" id="time1" name="time1" value="14:00" onchange='time_to_utc();'/></td>
           <td>
-            <select name="timezone1" id="timezone1" onchange='time_to_utc(document);'>
+            <select name="timezone1" id="timezone1" onchange='time_to_utc();'>
         <option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                     <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                     <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -210,7 +215,7 @@
   <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Andrè" /></td><td><input type="text" value="NY"/>
     <td><input type="time" id="time2" name="time2" value=""/></td>
           <td>
-            <select name="timezone2" id="timezone2">
+            <select name="timezone2" id="timezone2"  onchange='time_to_utc();'>
     		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                     <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                     <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -255,7 +260,7 @@
     <td><input type="text" value="Ireland"/></td>
     <td><input type="time" id="time3" name="time3" value=""/></td>
             <td>
-              <select name="timezone3" id="timezone3">
+              <select name="timezone3" id="timezone3"  onchange='time_to_utc();'>
       		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                       <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                       <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -301,7 +306,7 @@
       <td><input type="text" value="South Africa"/></td>
       <td><input type="time" id="time4" name="time4" value=""/></td>
               <td>
-                <select name="timezone4" id="timezone4">
+                <select name="timezone4" id="timezone4"  onchange='time_to_utc();'>
         		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                         <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                         <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -348,8 +353,8 @@
       <table width="100%" >
         <tr><th width=30%>UTC Time</th><td>
           <input type="time" id="timeUTC" value="10:00"/>
-          <input type="text" id="timeUTCText" value="10:00" maxlength="6"/>
-          <input type="text" id="timeUTCDate" value="0" maxlength="6"/>
+          <input type="text" id="timeUTCText" value="10:00" maxlength="6" hidden="hidden"/>
+          <br/>Date <input type="text" id="timeUTCDate" value="0" maxlength="6"/>
         </td></tr>
         <tr><th width=30%>Type</th><td>
           <select>
