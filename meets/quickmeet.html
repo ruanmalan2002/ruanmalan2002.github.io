@@ -38,6 +38,21 @@
     <link href="../css/carousel.css" rel="stylesheet">
 
     <script>
+    function default_time() {
+      //alert('pos a1');
+      //var h1 = Date().getHours();
+      //var h2 = Date().getMinutes();
+      //var exp=new Date().toTimeString().substr(0,5);
+      //alert(exp);
+      var now_time = new Date().toTimeString().substr(0,5);
+      //alert(now_time);
+      document.getElementById('time1').value=now_time;
+
+      var tzone = new Date().getTimezoneOffset()/60 * -1;
+      //alert(tzone);
+      document.getElementById('timezone1').value=tzone;
+    }
+
 
     function time_from_utc(time2, timezone2) {
       //alert('pos1');
@@ -125,8 +140,7 @@
 
   </head>
 <!-- NAVBAR ================================================== -->
-  <body>
-
+  <body onload="default_time();time_to_utc();">
 
     <div class="navbar-wrapper">
       <div class="container">
@@ -205,6 +219,7 @@
                     <option value="10"  >(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
                     <option value="11"  >(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
                     <option value="12" selected="selected"  >(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                    <option value="13">(GMT +13:00) Daylight savings Auckland, Wellington</option>
       </select>
           </td>
           <td><div class="input-group margin-bottom-sm">
@@ -401,6 +416,6 @@
 
   </div>
 
-  <button onclick="document.getElementById('timeUTCText').value=Date()">The UTC time is?</button>
+  <button onclick="default_time();time_to_utc();">Current time</button>
 
   </body>
