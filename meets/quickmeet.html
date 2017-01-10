@@ -36,18 +36,137 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/carousel.css" rel="stylesheet">
+
+    <script>
+
+    function time_from_utc() {
+      //alert('pos1');
+      var date_diff = document.getElementById("timeUTCDate").value;
+      var timeUTC=document.getElementById("timeUTC").value.substr(0,2);
+      var timeMin=document.getElementById("timeUTC").value.substr(2,5);
+      //alert('pos2');
+
+      var timezone2Val=document.getElementById("timezone2").value;
+      //alert('pos3');
+
+      //alert(timezone2Val);
+      var calc_value =  parseInt(timeUTC) + parseInt(timezone2Val);
+      //alert(calc_value);
+      if (calc_value < 0) {
+        calc_value=calc_value+24;
+        date_diff=date_diff-1;
+      }
+      if (calc_value > 24) {
+        calc_value=calc_value-24;
+        date_diff=date_diff+1;
+      }
+      //alert(calc_value);
+      //alert(date_diff.toString());
+      //alert('pos8');
+
+      if ((calc_value > -10) && (calc_value < 10)) {
+        calc_value = "0"+calc_value.toString()+timeMin;
+      } else {
+        calc_value = calc_value.toString()+timeMin;
+      }
+      //alert(calc_value);
+      alert('pos10');
+
+      document.getElementById("time2").value=calc_value.toString();
+    }
+
+
+    function time_to_utc() {
+      var date_diff=0;
+      //alert("time_to_utc");
+      //alert(document);
+      //alert(document.getElementById("time1"));
+      var time1Val=document.getElementById("time1").value.substr(0,2);
+      var timeMin=document.getElementById("time1").value.substr(2,5);
+      //alert(time1Val);
+      var timezone1Val=document.getElementById("timezone1").value;
+      //alert(timezone1Val);
+      var calc_value =  parseInt(time1Val) - parseInt(timezone1Val);
+      if (calc_value < 0) {
+        calc_value=calc_value+24;
+        date_diff=-1;
+      }
+      if (calc_value > 24) {
+        calc_value=calc_value-24;
+        date_diff=1;
+      }
+      //alert(calc_value);
+
+      if ((calc_value > -10) && (calc_value < 10)) {
+        calc_value = "0"+calc_value.toString()+timeMin;
+      } else {
+        calc_value = calc_value.toString()+timeMin;
+      }
+      //alert(date_diff.toString());
+      document.getElementById("timeUTCText").value=calc_value;
+      document.getElementById("timeUTC").value=calc_value;
+      document.getElementById("timeUTCDate").value=date_diff.toString();
+      //alert('calling');
+      time_from_utc();
+      alert('called');
+    }
+
+
+
+
+
+    </script>
+
+
   </head>
 <!-- NAVBAR ================================================== -->
   <body>
 
+
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html#about"><span style="font-family: 'Gloria Hallelujah', cursive;color: rgb(255, 0, 255);">MeetUs.Online</span></a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="../index.html#about"><span class="fa fa-sitemap" aria-hidden="true"/>&nbsp;ABOUT</a></li>
+                <li><a href="../index.html#groups"><span class="fa fa-map-signs" aria-hidden="true"/>&nbsp;GROUPS</a></li>
+                <li><a href="../index.html#community"><span class="fa fa-bullhorn" aria-hidden="true"/>&nbsp;COMMUNITY</a></li>
+                <li><a href="../index.html#events"><span class="fa fa-clock-o" aria-hidden="true"/>&nbsp;EVENTS</a></li>
+                <li><a href="../index.html#calendar"><span class="fa fa-calendar" aria-hidden="true"/>&nbsp;CALENDAR</a></li>
+                <li><a href="meets/quickmeet.html"><span class="fa fa-calendar" aria-hidden="true"/>&nbsp;QUICK</a></li>
+                <li><a href="../wellness.html"><span class="fa fa-graduation-cap" aria-hidden="true" style="color: rgb(255, 0, 255);"/>&nbsp;W</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 <div class="container">
+   <br/>
+   <br/>
    <h2>Schedule a quick meeting</h2>
     <form>
       <table width="100%" style="border-collapse: separate;border:5;">
         <tr><th>&nbsp;&nbsp;&nbsp;</th><th>Person&nbsp;</th><th>Place&nbsp;</th><th>Time&nbsp;</th><th>Timezone</th><th>Email&nbsp;</th></tr>
-        <tr><td>&nbsp;&nbsp;&nbsp;</td><td><input type="text" value="Ruan" /></td><td><input type="text" value="NZ"/></td><td><input type="time" id="time1' name="time1" value="14:00"/></td>
+        <tr><td>&nbsp;&nbsp;&nbsp;</td>
+          <td><input type="text" value="Ruan" /></td>
+          <td><input type="text" value="NZ"/></td>
+          <td><input type="time" id="time1" name="time1" value="14:00" onchange='time_to_utc(document);'/></td>
           <td>
-            <select name="timezone1">
+            <select name="timezone1" id="timezone1" onchange='time_to_utc(document);'>
         <option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                     <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                     <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -88,9 +207,10 @@
   <input class="form-control" type="text" placeholder="Email address" value="ruan.malan@somewhere.com">
 </div></td></tr>
         <tr><td><a class="btn btn-danger" href="#">
-  <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Andrè" /></td><td><input type="text" value="NY"/><td><input type="time" id="time2' name="time2" value=""/></td>
+  <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Andrè" /></td><td><input type="text" value="NY"/>
+    <td><input type="time" id="time2" name="time2" value=""/></td>
           <td>
-            <select name="timezone2">
+            <select name="timezone2" id="timezone2">
     		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                     <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                     <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -131,9 +251,11 @@
   <input class="form-control" type="text" placeholder="Email address" value="andre.bothma@somewhere.com">
 </div></td></tr>
           <tr><td><a class="btn btn-danger" href="#">
-    <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Jeroen" /></td><td><input type="text" value="Ireland"/><td><input type="time" id="time3' name="time3" value=""/></td>
+    <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Jeroen" /></td>
+    <td><input type="text" value="Ireland"/></td>
+    <td><input type="time" id="time3" name="time3" value=""/></td>
             <td>
-              <select name="timezone3">
+              <select name="timezone3" id="timezone3">
       		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                       <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                       <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -174,9 +296,12 @@
     <input class="form-control" type="text" placeholder="Email address" value="jeroen.roodbol@somewhere.com">
   </div></td></tr>
             <tr><td><a class="btn btn-danger" href="#">
-      <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Wynand" /></td><td><input type="text" value="South Africa"/><td><input type="time" id="time4' name="time4" value=""/></td>
+      <i class="fa fa-trash-o fa-lg"></i></a></td>
+      <td><input type="text" value="Wynand" /></td>
+      <td><input type="text" value="South Africa"/></td>
+      <td><input type="time" id="time4" name="time4" value=""/></td>
               <td>
-                <select name="timezone4">
+                <select name="timezone4" id="timezone4">
         		<option value="-12" >(GMT -12:00) Eniwetok, Kwajalein</option>
                         <option value="-11" >(GMT -11:00) Midway Island, Samoa</option>
                         <option value="-10" >(GMT -10:00) Hawaii</option>
@@ -221,7 +346,11 @@
     <div style="margin:0; border:0; background-color:rgba(128, 128, 128, 0.12);">
       <h3>Meeting Information</h3>
       <table width="100%" >
-        <tr><th width=30%>UTC Time</th><td><input type="time" id=timeGTM/></td></tr>
+        <tr><th width=30%>UTC Time</th><td>
+          <input type="time" id="timeUTC" value="10:00"/>
+          <input type="text" id="timeUTCText" value="10:00" maxlength="6"/>
+          <input type="text" id="timeUTCDate" value="0" maxlength="6"/>
+        </td></tr>
         <tr><th width=30%>Type</th><td>
           <select>
             <option>Skype</option>
@@ -250,13 +379,23 @@
           <td>
             <input type="submit" name="Invite attendees" />
           </td>
+          <td>
+          </td>
+        </tr>
+          <tr>
+            <td></td>
+            <td>
+           </td>
         </tr>
       </table>
-    </div>
+  </div>
 
 
     </form>
+    <p id="demo1">Unknown time</p>
 
   </div>
+
+  <button onclick="document.getElementById('timeUTCText').value=Date()">The UTC time is?</button>
 
   </body>
