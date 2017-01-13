@@ -67,7 +67,7 @@
 
       if (QueryString["name1"] != null) {
         //var RowIndex = 1;
-        for (RowIndex = 1; RowIndex < 12; RowIndex++) {
+        for (RowIndex = 1; RowIndex < 13; RowIndex++) {
           var name1Val = QueryString["name" + RowIndex];
           if (name1Val!= null) {
             setElementToValue(QueryString,"name" + RowIndex);
@@ -126,13 +126,22 @@
       document.getElementById("timeUTC").value=calc_value;
       document.getElementById("timeUTCDate").value=date_diff.toString();
       //alert('calling');
-      time_from_utc("time2","timezone2");
-      time_from_utc("time3","timezone3");
-      time_from_utc("time4","timezone4");
+      for (var RowIndex=2; RowIndex<13; RowIndex++) {
+        time_from_utc("time"+RowIndex,"timezone"+RowIndex);
+      }
+      //time_from_utc("time2","timezone2");
+      //time_from_utc("time3","timezone3");
+      //time_from_utc("time4","timezone4");
       //alert('called');
     }
 
     function time_from_utc(time2, timezone2) {
+      var check = document.getElementById(time2);
+      if (check == null) {
+        return;
+      }
+
+
       //alert('pos1');
       //var timezone2="timezone2";
       //var time2="time2";
@@ -436,7 +445,8 @@
         <tr><th width=30%>Notes</th><td><input type="text" value="https://docs.google..."></td></tr>
         <tr>
           <td>
-            <input type="submit" name="Invite attendees" />
+            <input type="submit" value="Update"/>
+            <input type="reset" value="Clear/reset"/>
           </td>
           <td>
           </td>
