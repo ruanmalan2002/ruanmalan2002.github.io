@@ -1,0 +1,33 @@
+==============================================
+
+Bedework
+https://www.apereo.org/projects/bedework
+https://wiki.jasig.org/display/BWK/Documentation+for+All+Bedework+Versions (updated Dec 2016)
+Apereo -> JASIG+Sakai
+
+Bedework is the most complex of the open source calendar servers; it not only provides the calendar event subscription and synchronization service, but it also implements a slick Web front-end end usable as a calendaring client in its own right. Bedework feeds can integrate server-provided RSS content as well, which could make it a good choice for a unified public portal.
+
+That complexity does come at a price, though. Bedework has a comparatively heavy system requirements load. For starters, it is written in Java, and designed to run on the Apache Tomcat application server. In addition, it requires JBoss, Apache Directory Server (DS), Derby, ActiveMQ, and Ant.
+
+Features-wise, Bedework can use either CalDAV or the iCalendar Transport-Independent Interoperability Protocol (iTIP) as its connection protocol, and it supports both the CalDAV Scheduling Extensions and VVENUE draft specifications, which are used for meeting and room scheduling. The front-end adds several advanced features, such as public event submissions and three types of calendar (private, public, and group). It supports Free/Busy information, but not VTODO, and it does not yet support email notification, although this is on the roadmap.
+
+---------------------
+Cosmo (last released 2008, freecode host since 2014)
+Rounding out the top five is Cosmo, the calendar server created by the Open Source Applications Foundation (OSAF) alongside its email-and-PIM client Chandler. Cosmo support three protocols: CalDAV connections, serving up "raw" .ics iCalendar files, and its own internal format, which is based on Atom and at the moment is only spoken by Chandler.
+
+Like Bedework, Cosmo is written in Java, designed for Apache Tomcat and related technologies. But also like Bedework, it implements far more than a server back-end. There is an extremely slick Web front end, supporting multiple user accounts, subscription management, and subscribing to other, remote calendar feeds.
+
+Cosmo supports a wide array of iCalendar and CalDAV extensions, including free/busy information, email notifications, and even CardDAV address book synchronization. Still, site administrators should give careful consideration to Cosmo because its future is uncertain. OSAF has halted development on Chandler, and while Cosmo is still in working order, if you run into trouble several years from now, you may have a harder time finding support.
+
+
+-------------
+uPortal, CAS also from Apereo like Bedework
+Portlets: https://wiki.jasig.org/display/PLT/Home
+(iCal calendar view, email inbox manager, content manager of HTML with WYSIWIG  and export and import, RSS/atom render, tabbed RSS, twitter feedf and post/reply/repost
+v5 overhaul in progress to make modern build once
+
+uPortal is the leading open source enterprise portal framework built by and for higher education institutions, K-12 schools and research communities.  uPortal continues to evolve through contributions from its global community and is supported by resources, grants, donations, and memberships fees from academic institutions, commercial affiliates, and non-profit foundations.
+
+uPortal is built on open standards-based technologies such as Java and XML, and enables easy, standards-based integration with authentication and security infrastructures, single sign-on secure access, campus applications, web-based content, and end user customization.  uPortal can easily integrate with other enterprise systems and can be customized for specific local needs. The powerful layout management system enables a dynamic, personal view for users with multiple roles. The user experience is further enhanced and made accessible through use of the Fluid skinning system. uPortal is one of the most widely deployed open source enterprise portal frameworks, having been adopted by hundreds of higher education institutions, K-12 schools and research communities world wide
+
+uPortal is mobile-ready for a wide variety of mobile devices! The resposive theme adapts to any sized device. Native mobile apps can easily be developed using the companion uMobile framework. This allows for easy deployment of native iPhone or Android campus apps that can include authentication, personalization and user customization. 

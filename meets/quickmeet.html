@@ -38,21 +38,99 @@
     <link href="../css/carousel.css" rel="stylesheet">
 
     <script>
-    function default_time() {
-      //alert('pos a1');
-      //var h1 = Date().getHours();
-      //var h2 = Date().getMinutes();
-      //var exp=new Date().toTimeString().substr(0,5);
-      //alert(exp);
-      var now_time = new Date().toTimeString().substr(0,5);
-      //alert(now_time);
-      document.getElementById('time1').value=now_time;
 
-      var tzone = new Date().getTimezoneOffset()/60 * -1;
-      //alert(tzone);
-      document.getElementById('timezone1').value=tzone;
+    function getURLParameters() {
+        var s1 = location.search.substring(1, location.search.length).split('&'),
+            r = {}, s2, i;
+        for (i = 0; i < s1.length; i += 1) {
+            s2 = s1[i].split('=');
+            r[decodeURIComponent(s2[0]).toLowerCase()] = decodeURIComponent(s2[1]);
+        }
+        return r;
+    };
+
+    function setElementToValue(QueryString, name) {
+      var localVal=QueryString[name];
+      console.log(name + " = " + localVal); //logs t1
+      if (localVal != null) {
+        var element = document.getElementById(name);
+        if (element == null) {
+          console.log("No element found by name "+name);
+        } else {
+          document.getElementById(name).value=localVal;
+        }
+      }
+    };
+
+    function default_time() {
+      var QueryString = getURLParameters();
+
+      if (QueryString["name1"] != null) {
+        //var RowIndex = 1;
+        for (RowIndex = 1; RowIndex < 12; RowIndex++) {
+          var name1Val = QueryString["name" + RowIndex];
+          if (name1Val!= null) {
+            setElementToValue(QueryString,"name" + RowIndex);
+            setElementToValue(QueryString,"place" + RowIndex);
+            setElementToValue(QueryString,"time" + RowIndex);
+            setElementToValue(QueryString,"timezone" + RowIndex);
+            setElementToValue(QueryString,"email" + RowIndex);
+          }
+        }
+      }
+      else {
+        //alert('pos a1');
+        //var h1 = Date().getHours();
+        //var h2 = Date().getMinutes();
+        //var exp=new Date().toTimeString().substr(0,5);
+        //alert(exp);
+        var now_time = new Date().toTimeString().substr(0,5);
+        //alert(now_time);
+        document.getElementById('time1').value=now_time;
+
+        var tzone = new Date().getTimezoneOffset()/60 * -1;
+        //alert(tzone);
+        document.getElementById('timezone1').value=tzone;
+      }
+      time_to_utc();
     }
 
+    function time_to_utc() {
+      var date_diff=0;
+      //alert("time_to_utc");
+      //alert(document);
+      //alert(document.getElementById("time1"));
+      var time1Val=document.getElementById("time1").value.substr(0,2);
+      var timeMin=document.getElementById("time1").value.substr(2,5);
+      //alert(time1Val);
+      var timezone1Val=document.getElementById("timezone1").value;
+      //alert(timezone1Val);
+      var calc_value =  parseInt(time1Val) - parseInt(timezone1Val);
+      if (calc_value < 0) {
+        calc_value=calc_value+24;
+        date_diff=-1;
+      }
+      if (calc_value > 24) {
+        calc_value=calc_value-24;
+        date_diff=1;
+      }
+      //alert(calc_value);
+
+      if ((calc_value > -10) && (calc_value < 10)) {
+        calc_value = "0"+calc_value.toString()+timeMin;
+      } else {
+        calc_value = calc_value.toString()+timeMin;
+      }
+      //alert(date_diff.toString());
+      document.getElementById("timeUTCText").value=calc_value;
+      document.getElementById("timeUTC").value=calc_value;
+      document.getElementById("timeUTCDate").value=date_diff.toString();
+      //alert('calling');
+      time_from_utc("time2","timezone2");
+      time_from_utc("time3","timezone3");
+      time_from_utc("time4","timezone4");
+      //alert('called');
+    }
 
     function time_from_utc(time2, timezone2) {
       //alert('pos1');
@@ -94,53 +172,13 @@
     }
 
 
-    function time_to_utc() {
-      var date_diff=0;
-      //alert("time_to_utc");
-      //alert(document);
-      //alert(document.getElementById("time1"));
-      var time1Val=document.getElementById("time1").value.substr(0,2);
-      var timeMin=document.getElementById("time1").value.substr(2,5);
-      //alert(time1Val);
-      var timezone1Val=document.getElementById("timezone1").value;
-      //alert(timezone1Val);
-      var calc_value =  parseInt(time1Val) - parseInt(timezone1Val);
-      if (calc_value < 0) {
-        calc_value=calc_value+24;
-        date_diff=-1;
-      }
-      if (calc_value > 24) {
-        calc_value=calc_value-24;
-        date_diff=1;
-      }
-      //alert(calc_value);
-
-      if ((calc_value > -10) && (calc_value < 10)) {
-        calc_value = "0"+calc_value.toString()+timeMin;
-      } else {
-        calc_value = calc_value.toString()+timeMin;
-      }
-      //alert(date_diff.toString());
-      document.getElementById("timeUTCText").value=calc_value;
-      document.getElementById("timeUTC").value=calc_value;
-      document.getElementById("timeUTCDate").value=date_diff.toString();
-      //alert('calling');
-      time_from_utc("time2","timezone2");
-      time_from_utc("time3","timezone3");
-      time_from_utc("time4","timezone4");
-      //alert('called');
-    }
-
-
-
-
 
     </script>
 
 
   </head>
 <!-- NAVBAR ================================================== -->
-  <body onload="default_time();time_to_utc();">
+  <body onload="default_time();">
 
     <div class="navbar-wrapper">
       <div class="container">
@@ -181,8 +219,8 @@
       <table width="100%" style="border-collapse: separate;border:5;">
         <tr><th>&nbsp;&nbsp;&nbsp;</th><th>Person&nbsp;</th><th>Place&nbsp;</th><th>Time&nbsp;</th><th>Timezone</th><th>Email&nbsp;</th></tr>
         <tr><td>&nbsp;&nbsp;&nbsp;</td>
-          <td><input type="text" value="Ruan" /></td>
-          <td><input type="text" value="NZ"/></td>
+          <td><input type="text" id="name1" name="name1" value="Ruan" /></td>
+          <td><input type="text" id="place1" name="place1" value="NZ"/></td>
           <td><input type="time" id="time1" name="time1" value="14:00" onchange='time_to_utc();'/></td>
           <td>
             <select name="timezone1" id="timezone1" onchange='time_to_utc();'>
@@ -224,10 +262,11 @@
           </td>
           <td><div class="input-group margin-bottom-sm">
   <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-  <input class="form-control" type="text" placeholder="Email address" value="ruan.malan@somewhere.com">
+  <input class="form-control" type="text" placeholder="Email address" id="email1" name="email1" value="ruan.malan@somewhere.com">
 </div></td></tr>
         <tr><td><a class="btn btn-danger" href="#">
-  <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Andrè" /></td><td><input type="text" value="NY"/>
+  <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" id="name2" name="name2" value="Andrè" /></td>
+  <td><input type="text" id="place2" name="place2" value="NY"/>
     <td><input type="time" id="time2" name="time2" value=""/></td>
           <td>
             <select name="timezone2" id="timezone2"  onchange='time_to_utc();'>
@@ -268,11 +307,11 @@
           </td>
           <td><div class="input-group margin-bottom-sm">
   <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-  <input class="form-control" type="text" placeholder="Email address" value="andre.bothma@somewhere.com">
+  <input class="form-control" type="text" placeholder="Email address" id="email2" name="email2" value="andre.bothma@somewhere.com">
 </div></td></tr>
           <tr><td><a class="btn btn-danger" href="#">
-    <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" value="Jeroen" /></td>
-    <td><input type="text" value="Ireland"/></td>
+    <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" id="name3" name="name3" value="Jeroen" /></td>
+    <td><input type="text" id="place3" name="place3" value="Ireland"/></td>
     <td><input type="time" id="time3" name="time3" value=""/></td>
             <td>
               <select name="timezone3" id="timezone3"  onchange='time_to_utc();'>
@@ -313,12 +352,12 @@
             </td>
             <td><div class="input-group margin-bottom-sm">
     <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-    <input class="form-control" type="text" placeholder="Email address" value="jeroen.roodbol@somewhere.com">
+    <input class="form-control" type="text" placeholder="Email address" id="email3" name="email3" value="jeroen.roodbol@somewhere.com">
   </div></td></tr>
             <tr><td><a class="btn btn-danger" href="#">
       <i class="fa fa-trash-o fa-lg"></i></a></td>
-      <td><input type="text" value="Wynand" /></td>
-      <td><input type="text" value="South Africa"/></td>
+      <td><input type="text" id="name4" name="name4" value="Wynand" /></td>
+      <td><input type="text" id="place4" name="place4" value="South Africa"/></td>
       <td><input type="time" id="time4" name="time4" value=""/></td>
               <td>
                 <select name="timezone4" id="timezone4"  onchange='time_to_utc();'>
@@ -359,7 +398,7 @@
               </td>
               <td><div class="input-group margin-bottom-sm">
       <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-      <input class="form-control" type="text" placeholder="Email address" value="wynand.boshof@somewhere.com">
+      <input class="form-control" type="text" placeholder="Email address" id="email4" name="email4" value="wynand.boshof@somewhere.com">
     </div></td></tr>
       </table>
 
