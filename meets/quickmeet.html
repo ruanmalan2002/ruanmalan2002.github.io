@@ -270,9 +270,10 @@
       </select>
           </td>
           <td><div class="input-group margin-bottom-sm">
-  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-  <input class="form-control" type="text" placeholder="Email address" id="email1" name="email1" value="ruan.malan@somewhere.com">
-</div></td></tr>
+            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+            <input class="form-control" type="text" placeholder="Email address" id="email1" name="email1" value="ruan.malan@somewhere.com">
+          </div></td>
+        </tr>
         <tr><td><a class="btn btn-danger" href="#">
   <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" id="name2" name="name2" value="Andrè" /></td>
   <td><input type="text" id="place2" name="place2" value="NY"/>
@@ -315,9 +316,10 @@
     	</select>
           </td>
           <td><div class="input-group margin-bottom-sm">
-  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-  <input class="form-control" type="text" placeholder="Email address" id="email2" name="email2" value="andre.bothma@somewhere.com">
-</div></td></tr>
+            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+            <input class="form-control" type="text" placeholder="Email address" id="email2" name="email2" value="andre.bothma@somewhere.com">
+          </div></td>
+          </tr>
           <tr><td><a class="btn btn-danger" href="#">
     <i class="fa fa-trash-o fa-lg"></i></a></td><td><input type="text" id="name3" name="name3" value="Jeroen" /></td>
     <td><input type="text" id="place3" name="place3" value="Ireland"/></td>
@@ -360,9 +362,10 @@
       	</select>
             </td>
             <td><div class="input-group margin-bottom-sm">
-    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-    <input class="form-control" type="text" placeholder="Email address" id="email3" name="email3" value="jeroen.roodbol@somewhere.com">
-  </div></td></tr>
+              <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+              <input class="form-control" type="text" placeholder="Email address" id="email3" name="email3" value="jeroen.roodbol@somewhere.com">
+            </div></td>
+            </tr>
             <tr><td><a class="btn btn-danger" href="#">
       <i class="fa fa-trash-o fa-lg"></i></a></td>
       <td><input type="text" id="name4" name="name4" value="Wynand" /></td>
@@ -406,9 +409,10 @@
         	</select>
               </td>
               <td><div class="input-group margin-bottom-sm">
-      <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-      <input class="form-control" type="text" placeholder="Email address" id="email4" name="email4" value="wynand.boshof@somewhere.com">
-    </div></td></tr>
+                <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                <input class="form-control" type="text" placeholder="Email address" id="email4" name="email4" value="wynand.boshof@somewhere.com">
+              </div></td>
+            </tr>
       </table>
 
     <div style="margin:0; border:0; background-color:rgba(128, 128, 128, 0.12);">
@@ -458,6 +462,39 @@
         </tr>
       </table>
   </div>
+
+  <div style="margin:0; border:0; background-color:rgba(12, 128, 128, 0.12);">
+    <h3>Invitation Draft</h3>
+    <table width="100%" >
+      <tr>
+        <td width=10%>To</td>
+        <td width="90%"><input type="time" id="emailTo" name="emailTo" value=""/></td>
+      </tr>
+      <tr>
+        <td>Subject</td>
+        <td><input type="time" id="emailSubject" name="emailSubject" value=""/></td>
+       </tr>
+      <tr>
+        <td>Message</td>
+        <td><input type="text" id="emailBody" name="emailBody" value="You have been invited.."></input></td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <input type="submit" value="TODO email send to self"/>
+          <input type="reset" value="TODO email send to all joint"/>
+          <input type="reset" value="TODO calendar send to all joint"/>
+        </td>
+      </tr>
+        <tr>
+          <td></td>
+          <td>
+         </td>
+      </tr>
+    </table>
+</div>
+
 
     </form>
   </div>
