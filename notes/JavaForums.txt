@@ -10,16 +10,16 @@ Rating/Karma System
 FUDforum, HaveFnuBB!, MyBB, SMF
 
 ========================================================
-FUDForum
+FUDForum - GPL
 8.7 user, 8 reviewer
 Most features on matrix
 FUDforum, or Fast Uncompromising Discussion Forum is a complete forum package, with a quite impressive list of features. Its developers insisted on the ease of use of its administration panel and on the general usability of the forum.
-PHP, many DBc calendar, most features, recent release
+PHP, many DBs, calendar, most features, recent release. Integrated with Drupal, MediaWiki, eGroupWare
 --------------------------------------------------
-MyBB http://www.forum-software.org/mybb/review
+MyBB http://www.forum-software.org/mybb/review - LGPL
 Users rated 9.2 and reviewer 9/10
 Open source, has calendar
-Also has portal, Wiki, many social networks, manu plugins and themes
+Also has portal, Wiki, many social networks, many plugins and themes
 Three Db options for postgresql / mysql /SQLlite
 Recent release at 21 Dec 2016
 https://mybb.com/download/
@@ -31,7 +31,7 @@ Easy to learn
 ----------------
 
 JForum  http://jforum.net/
-This is among the robust and powerful multithreaded forum software that doesn’t rely on database with a discussion board developed in java. jForum is simple to use because its administrative panel is user friendly making it an effective forum engine which gives you unrestricted forum solutions, email notification, categories, topics and personal messages that provide you immediate update regarding your topics then ranking them  using the user rankings. This software has a clean design; as well, its implementation makes JForum simple to extend and customize.
+This is among the robust and powerful multithreaded forum software that doesnï¿½t rely on database with a discussion board developed in java. jForum is simple to use because its administrative panel is user friendly making it an effective forum engine which gives you unrestricted forum solutions, email notification, categories, topics and personal messages that provide you immediate update regarding your topics then ranking them  using the user rankings. This software has a clean design; as well, its implementation makes JForum simple to extend and customize.
 Notes: Tomcat Webapp, used by EA and JavaRanch
 No calendar?
 ----------------
@@ -61,7 +61,7 @@ Has calendar, no missing features.
 
 IP Board  Not FREE-
 http://www.forum-software.org/ipboard/review
-PHP, 5/5 in forum-software, 7.3 users, 
+PHP, 5/5 in forum-software, 7.3 users,
 ---------------
 Google Groups - starter option?
 
@@ -74,18 +74,18 @@ This forum software developed in java has a discussion board that is specificall
 JavaBB is a software based on Java, developed specifically with intention to join communities. Based in phpbb, we are working pledged by the success of phpBB, to become javaBB so efficient as it.
 
 JForumFusion Old-(site down)
-JForumFusion is a platform independent discussion board program. Some of it main features include: support of unlimited discussion forums, topics and member, threaded or linear discussions, file attachments, private messaging, web based administrative tools, UBBCode, multiple authentication sources, and high performance search engine. 
+JForumFusion is a platform independent discussion board program. Some of it main features include: support of unlimited discussion forums, topics and member, threaded or linear discussions, file attachments, private messaging, web based administrative tools, UBBCode, multiple authentication sources, and high performance search engine.
 
-6.hipergate – java based CRM and groupware software    Old-(last update 3.5 years)
-hIpergate is a free and open source java based CRM and Groupware software that include various types of tools and services such as sales automation, customer service, intranet, email marketing, content management, bug tracker, project manager, social networks integration, webmail, calendar, forums and file sharing services. Hipergate provide support for all major database backend such as PostgreSQL, Oracle and SQL Server. – hipergate java CRM and groupware
+6.hipergate ï¿½ java based CRM and groupware software    Old-(last update 3.5 years)
+hIpergate is a free and open source java based CRM and Groupware software that include various types of tools and services such as sales automation, customer service, intranet, email marketing, content management, bug tracker, project manager, social networks integration, webmail, calendar, forums and file sharing services. Hipergate provide support for all major database backend such as PostgreSQL, Oracle and SQL Server. ï¿½ hipergate java CRM and groupware
 
 
 7.LibreSource OldTech-(Jonas,Subversion)  Old-(site down)
-LibreSource is an open source, highly customizable, modular collaborative development platform for web portals, groupware, e-archiving and Web publishing. The platform is written in Java and provide all the necessary tools to share and communicate within your project teams under one centralize place. it reduced project cost and improve the coordination between projects and team members. – LibreSource
+LibreSource is an open source, highly customizable, modular collaborative development platform for web portals, groupware, e-archiving and Web publishing. The platform is written in Java and provide all the necessary tools to share and communicate within your project teams under one centralize place. it reduced project cost and improve the coordination between projects and team members. ï¿½ LibreSource
 
-The platform written in Java/J2EE, it’s a modular web server that users can customize online by combining resources and rights: wiki pages, forum, trackers, Synchronizers, Subversion repositories, files, download areas, drop boxes, forms, etc. it uses most of the advanced services provided by the OW2 application server called JOnAS.
+The platform written in Java/J2EE, itï¿½s a modular web server that users can customize online by combining resources and rights: wiki pages, forum, trackers, Synchronizers, Subversion repositories, files, download areas, drop boxes, forms, etc. it uses most of the advanced services provided by the OW2 application server called JOnAS.
 
-LibreSource is perfect collaborative development platform for the developer or designer who doesn’t want to learn lots of technical jargon and wants to focus more on communication with the project’s members.
+LibreSource is perfect collaborative development platform for the developer or designer who doesnï¿½t want to learn lots of technical jargon and wants to focus more on communication with the projectï¿½s members.
 
 Features of LibreSource
 1.Modular and extensible collaborative platform based on resources
@@ -106,5 +106,3 @@ Features of LibreSource
 16.Uniform Resource Identifier (URI)
 17.Wiki editable description and web pages
 18.Easy to create, update, move or delete any resource
-
-
