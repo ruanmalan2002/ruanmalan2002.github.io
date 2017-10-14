@@ -1,0 +1,270 @@
+body {
+	background: rgb(255, 255, 255); font: 10pt/1.32em Arial, Helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+a {
+	color: rgb(0, 0, 0); text-decoration: none;
+}
+.hidden-structure {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#sidebar {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.hide {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#headerutils {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.menubox {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#sectionNav {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#specialzones {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#footer p.links {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.lock {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.secondary {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.tertiary {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#menu {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#home-main-nav {
+	border-color: rgb(255, 255, 255); display: none;
+}
+dl.menu {
+	border-color: rgb(255, 255, 255); display: none;
+}
+dl.menu dd {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.shadowcontent img {
+	border-color: rgb(255, 255, 255); display: none;
+}
+p.forms {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.fileinfo {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#login-links {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#forms-tabs {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#docs-buttons {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.lineboxbottom img {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.lineboxtop img {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#frcStartLink {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#search-widget {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.footer-icon {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.footer-col-bold {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.footer-col {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.promoimage {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#footer .moreinfo {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.greylinebox {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.backtotop {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.home-box-icon img {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.home-content-icon img {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#img-holder {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.box-section-icon {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.box-section p {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#pagination ul {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#header-gradient img {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.advert-image {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#advert-bottom {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#advert-footer {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#container {
+	margin: 0px; padding: 0px;
+}
+#page {
+	margin: 0px; padding: 0px;
+}
+#wide-page-advert {
+	margin: 0px; padding: 0px;
+}
+#sectionheader {
+	padding-bottom: 1em;
+}
+.breadcrumbs {
+	padding-bottom: 1em;
+}
+.sectionTitle {
+	font-size: 120%; font-weight: 700;
+}
+.breadcrumbs {
+	font-size: 70%;
+}
+.moreinfo {
+	margin-top: 20px;
+}
+#page h1 {
+	font-size: 140%; font-weight: 400;
+}
+#page h2 {
+	font-size: 120%;
+}
+#page h2 .teReo {
+	font-size: 90%; font-style: italic;
+}
+#page h3 {
+	padding-top: 0.25em; font-size: 100%; border-top-color: rgb(238, 238, 238); border-top-width: 1px; border-top-style: solid;
+}
+#page h4 {
+	padding-left: 0.8em; font-size: 95%; border-left-color: rgb(238, 238, 238); border-left-width: 1em; border-left-style: solid;
+}
+#page h5 {
+	font-size: 90%; margin-bottom: -0.5em;
+}
+#page h6 {
+	font-size: 85%;
+}
+#page table {
+	width: 95%; margin-right: auto; margin-left: auto; cell-padding: 5px;
+}
+#page table th {
+	border: 1px solid rgb(153, 153, 153); border-image: none;
+}
+#page table tr {
+	border: 1px solid rgb(153, 153, 153); border-image: none;
+}
+#page table td {
+	border: 1px solid rgb(153, 153, 153); border-image: none;
+}
+#page table.outerborder {
+	border: 1px solid rgb(223, 223, 223); border-image: none;
+}
+#page {
+	width: 98%;
+}
+#content {
+	width: 98%;
+}
+#container {
+	width: 98%;
+}
+#widthwrapper {
+	width: 98%;
+}
+#wide-page {
+	font-size: 100%; margin-right: 5%; margin-left: -5%;
+}
+#page .indent1 p {
+	margin: 0px 0px 0px 20px;
+}
+#page .indent2 p {
+	margin: 0px 0px 0px 40px;
+}
+#page .indent3 p {
+	margin: 0px 0px 0px 60px;
+}
+#page .indent1 li {
+	margin: 0px 0px 0px 3px;
+}
+#page .indent2 li {
+	margin: 0px 0px 0px 17px;
+}
+#page .indent3 li {
+	margin: 0px 0px 0px 42px;
+}
+.mt-z {
+	margin-top: 0px;
+}
+.mb-z {
+	margin-bottom: 0px;
+}
+acronym {
+	border: 0px currentColor; border-image: none;
+}
+abbr {
+	border: 0px currentColor; border-image: none;
+}
+.example-box-bg {
+	border: 1px rgb(223, 223, 223); border-image: none;
+}
+.special-situations-box-bg {
+	border: 1px rgb(223, 223, 223); border-image: none;
+}
+.highlight {
+	border: 1px rgb(223, 223, 223); border-image: none;
+}
+#boxwrapper #sectionheader .teReo {
+	font-weight: 400; text-size: 85%;
+}
+.list-row#forms-list td.form-info h2 {
+	font-size: 100%;
+}
+#top_nav {
+	border-color: rgb(255, 255, 255); display: none;
+}
+.has_js #contact .contact_detail {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#contact .contact_my_ir {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#contact .contact_wrapper {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#contact .contact_panel {
+	border-color: rgb(255, 255, 255); display: none;
+}
+#contact .no_js_top_button {
+	border-color: rgb(255, 255, 255); display: none;
+}

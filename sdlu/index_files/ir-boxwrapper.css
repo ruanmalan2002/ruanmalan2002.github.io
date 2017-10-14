@@ -1,0 +1,27 @@
+#boxwrapper {
+	background: url("/resources/f/d/fdb545004ba37660b9cebd9ef8e4b077/brandboxbg.gif") repeat-x top rgb(41, 147, 160); margin: 5px 10px 0px 0px; padding: 0px; clear: both; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(153, 214, 221); border-top-width: 5px; border-bottom-width: 6px; border-top-style: solid; border-bottom-style: solid;
+}
+#boxwrapper #sectionheader {
+	background: url("/resources/0/2/020c4d004ba376b78680bf9ef8e4b077/watermark-ir.gif") no-repeat right top; padding-bottom: 22px;
+}
+#boxwrapper #sectionheader .breadcrumbs {
+	color: rgb(255, 255, 255); padding-bottom: 13px; text-decoration: none;
+}
+#boxwrapper #sectionheader .breadcrumbs a {
+	color: rgb(255, 255, 255); padding-bottom: 13px; text-decoration: none;
+}
+#boxwrapper #sectionheader .breadcrumbs a:hover {
+	text-decoration: underline;
+}
+#boxwrapper #sectionheader .sectionTitle a:hover {
+	text-decoration: underline;
+}
+#boxwrapper #sectionheader .sectionTitle a {
+	color: rgb(255, 255, 255);
+}
+#boxwrapper #sectionheader .sectionTitle {
+	color: rgb(255, 255, 255);
+}
+#boxwrapper #sectionheader .teReo {
+	color: rgb(153, 214, 221);
+}

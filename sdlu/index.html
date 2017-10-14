@@ -1,0 +1,932 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0088)http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><HTML><!-- IRD - Content Model - Section Contents --><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<META name="viewport" content="width=device-width, initial-scale=1.0"> 
+<META name="DC.Identifier" content="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html" 
+scheme="URI"> 
+<META name="DC.Title" content="Developer centre (Software developers)"> 
+<META name="DC.Rights" content="Crown Copyright, New Zealand, 2016"> 
+<META name="robots" content="all"> <!-- SEO --> <TITLE>Developer centre 
+(Software developers)</TITLE> 
+<META name="description" content="Information for software developers: IR API strategy, GST, Payroll, Tax agent and PTS intermediaries services and Specifications for banks."> 
+<META name="keywords" content=""> 
+<META content="Developer centre (Software developers)" property="og:title"> 
+<META content="website" property="og:type"> 
+<META content="http://www.ird.govt.nz/resources/4/9/49eb657e-4f27-4890-923c-c08cb4ef80e9/inland-revenue-og-image.png" 
+property="og:image"> 
+<META content="image/png" property="og:image:type"> 
+<META content="800" property="og:image:width"> 
+<META content="420" property="og:image:height"> 
+<META content="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html" 
+property="og:url"> 
+<META content="Inland Revenue" property="og:site_name"> 
+<META content="" property="og:description"> 
+<META content="en_NZ" property="og:locale"> <LINK href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html" 
+rel="canonical"> <LINK href="/resources/9/6/96da6f004ba376e68d4ebd9ef8e4b077/favicon.ico" 
+rel="shortcut icon" type="image/x-ico"> <!-- End SEO --> <LINK href="index_files/ir-layout.css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="index_files/ir-menu.css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="index_files/ir-boxwrapper.css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="index_files/ir-menu-dna.css" 
+rel="stylesheet" type="text/css" media="screen"> <LINK href="index_files/ir-print.css" 
+rel="stylesheet" type="text/css" media="print"> 
+<SCRIPT src="index_files/jquery-1.3.2.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="index_files/jquery-ui-1.7.1.custom.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="index_files/platform.js" type="text/javascript"></SCRIPT>
+ <!-- custom styles --> 
+<STYLE type="text/css" media="screen"> 
+	@import url(/css/ir-t3-boxwrapper.css);
+</STYLE>
+ <!-- end custom styles --> 
+<STYLE type="text/css" media="screen"> 
+	@import url(/css/ir-content-model-layout.css);
+</STYLE>
+ <LINK href="index_files/ir-mobile-overwrites.css" rel="stylesheet" type="text/css" 
+media="screen"> <LINK href="index_files/ir-mobile-media.css" rel="stylesheet" 
+type="text/css" media="screen"> <!--[if lte IE 8]>
+<style type="text/css" media="screen"> 
+	@import url(/css/ie8-fixes.css);
+</style>
+<![endif]--> <!--[if lte IE 7]>
+<style type="text/css" media="screen"> 
+	@import url(/css/ie7-fixes.css);
+</style>
+<![endif]--> 
+<SCRIPT src="index_files/ird-mobile-menu.js" type="text/javascript"></SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18817"></HEAD> 
+<BODY><!--googleoff: all--> <A class="hidden-structure" accesskey="[" href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#page">Skip 
+to Content</A>
+<TABLE class="wrapper" border="0" cellspacing="0" cellpadding="0"><!-- This table is closed in the IRD PAGE WRAPPER END component -->
+	 
+  <TBODY>
+  <TR id="header-row">
+    <TD style="width: 985px;">
+      <DIV id="mobile-menu">
+      <DIV id="mobile-logo">
+      <H1 class="inlandrevenue"><A title="Click to go to Inland Revenue homepage" 
+      href="http://www.ird.govt.nz/"><IMG width="179" height="50" alt="Click to go to Inland Revenue homepage" 
+      src="index_files/ir-logo-white-179-50.png"></A> </H1></DIV>
+      <DIV id="mobile-button"><STRONG class="open-menu">Menu</STRONG><STRONG 
+      class="close-menu">Close</STRONG><SPAN></SPAN></DIV>
+      <DIV class="clear"></DIV></DIV>
+      <DIV id="headerutils"><A href="http://www.ird.govt.nz/aboutir?id=globalnav">About 
+      us</A> | <A href="http://www.ird.govt.nz/aboutir/media-centre?id=globalnav">Media</A> 
+      | <A 
+      href="http://www.ird.govt.nz/aboutir/careers?id=globalnav">Careers</A> | 
+      <A 
+      href="http://www.ird.govt.nz/aboutir/newsletters?id=globalnav">Newsletters 
+      and bulletins</A> | <A href="http://www.ird.govt.nz/taxpolicy?id=globalnav">Tax 
+      policy and legislation</A> | <A href="http://www.ird.govt.nz/contact-us?id=globalnav">Contact 
+      us</A> | <A href="http://www.ird.govt.nz/about-this-site/whats-new?id=globalnav">What's 
+      new</A> | <A accesskey="2" href="http://www.ird.govt.nz/about-this-site/sitemap?id=globalnav">Site 
+      map</A> | <A href="http://www.ird.govt.nz/identity-security/identity-security-index.html?id=globalnav">Identity 
+      security</A> <SPAN class="hide">&nbsp;|&nbsp;</SPAN> <A class="hide" 
+      accesskey="0" href="http://www.ird.govt.nz/help/accessibility/help-access-keys.html?id=globalnav">Access 
+      keys</A> </DIV>
+      <DIV id="header">
+      <H1 class="inlandrevenue"><A title="Click to go to Inland Revenue homepage" 
+      href="http://www.ird.govt.nz/"><IMG width="177" height="52" alt="Click to go to Inland Revenue homepage" 
+      src="index_files/irdlogo.gif"> </A> </H1></DIV><!-- IRD website search widget start. --> 
+      <DIV id="search-widget">
+      <FORM name="search" action="http://search.ird.govt.nz/search/IRD" method="GET"><LABEL 
+      class="label" for="words"><A title="Learn how to search this site effectively." 
+      accesskey="3" href="http://www.ird.govt.nz/search/">Search</A>		 </LABEL>
+      		 <BR class="nobr"><INPUT name="q" class="textfield" id="words" type="text" maxlength="255">
+      		 <LABEL class="hide" for="submit"></LABEL>		 <INPUT title="Click to start search." class="submit" id="submit" type="submit" value="go">
+      		 <INPUT name="site" type="hidden" value="IRD">
+		 <INPUT name="client" type="hidden" value="IRD">		 <INPUT name="proxystylesheet" type="hidden" value="IRD">
+      		 <INPUT name="filter" type="hidden" value="1">
+		 <INPUT name="getfields" type="hidden" value="description">
+		 <INPUT name="output" type="hidden" value="xml_no_dtd">	 </FORM></DIV><!-- IRD website search widget end. --> 
+    </TD></TR>
+  <TR>
+    <TD style="width: 985px;">
+      <HR class="hide">
+       
+      <DIV id="container">
+      <DIV id="content"><!--SyndicatedContent--> <!--[if lte IE 7]><style type="text/css">#top_nav .head_nav li.top_link#home {width: 10%;}</style><![endif]--> <!--[if lte IE 8]>
+<script type="text/JavaScript">
+function menuWindowResize() {
+	if ($(window).width() < 880) {
+		$("#top_nav .nav_content").css("top","151px");
+		$("#top_nav .head_nav li.top_link#home a").css("padding","20px 5px");
+	} else {
+		$("#top_nav .nav_content").css("top","133px");
+		$("#top_nav .head_nav li.top_link#home a").css("padding","10px 5px");
+	}
+}
+$(document).ready(function() {
+	menuWindowResize();
+	$(window).resize(menuWindowResize);
+});
+</script>
+<![endif]--> 
+<SCRIPT type="text/javascript">
+$(document).ready(function() {
+	$('.head_nav a.head_link').click(function (e) {
+		$(this).parent().siblings('.active').removeClass('active');
+		$(this).parent().toggleClass('active');
+		e.preventDefault();
+	});	
+	$('.first a').unbind('click');	
+	$('.nav_close').click(function (e) {
+		$(this).parents('.top_link').removeClass('active');
+		e.preventDefault();
+	});
+	$('html').click(function (e) {
+		var topLink = $('.top_link');
+		topLink.removeClass('active');
+	});
+	$('.head_nav').click(function (e) {
+		e.stopPropagation();
+	});
+});
+$(document).keydown(function (e) {
+	if (e.keyCode == 27) {
+		var topLink = $('.top_link');
+		topLink.removeClass('active');
+	}
+});
+</SCRIPT>
+       
+      <DIV id="top_nav" role="navigation">
+      <DIV class="head_nav clearfix">
+      <UL>
+        <LI class="top_link first" id="home"><A title="Click to go to Inland Revenue homepage" 
+        class="head_link" href="http://www.ird.govt.nz/">Home</A></LI>
+        <LI class="top_link" id="individuals"><A class="head_link" href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Individuals 
+        &amp; families</A>
+        <UL class="nav_content links_section clearfix">
+          <LI class="quick_links">
+          <H4>Quick links</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/income-tax-individual/filing-your-return">File 
+            an income tax return</A></LI>
+            <LI><A href="http://www.ird.govt.nz/contact-us/topfive/four/tax-code-index.html">What 
+            is my tax code?</A></LI>
+            <LI><A href="http://www.ird.govt.nz/income-tax-individual/tax-credits">Tax 
+            credits and donations</A></LI>
+            <LI><A href="http://www.ird.govt.nz/how-to/irdnumbers">IRD 
+            numbers</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/income-tax-individual/basics">Income 
+            tax rates</A></LI>
+            <LI><A href="http://www.ird.govt.nz/identity-security/identity-security-index.html">Identity 
+            security</A></LI>
+            <LI><A href="http://www.ird.govt.nz/tax-crime">Tax 
+          crime</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Receiving income</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/income-tax-individual">Income 
+            tax</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/income-tax-individual/end-year">End of 
+            tax year</A></LI>
+            <LI><A href="http://www.ird.govt.nz/toii">Investing money</A></LI>
+            <LI><A href="http://www.ird.govt.nz/international/residency">Tax 
+            residency and status</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/international/comingleaving">Coming to 
+            or leaving NZ</A></LI>
+            <LI><A href="http://www.ird.govt.nz/contractors/contractors-schedular-payments-home.html">Contractors 
+            receiving schedular payments</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Supporting families</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/wff-tax-credits">Working for 
+            Families Tax Credits</A></LI>
+            <LI><A href="http://www.ird.govt.nz/childsupport">Child 
+            support</A></LI>
+            <LI><A href="http://www.ird.govt.nz/yoursituation-ind/parents/parents-paid-parental-leave.html">Paid 
+            parental leave</A></LI></UL></LI>
+          <LI class="hidden"></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Student loans</H4>
+          <UL dir="ltr">
+            <LI><A title="All about student loans" href="http://www.ird.govt.nz/studentloans/student-loans-home.html">All 
+            about student loans</A></LI>
+            <LI><A title="Working in New Zealand" href="http://www.ird.govt.nz/studentloans/working/working-new-zealand-student-loan-index.html">Working 
+            in New Zealand</A></LI>
+            <LI><A title="Going overseas" href="http://www.ird.govt.nz/studentloans/overseas/student-loan-going-overseas-index.html">Going 
+            overseas</A></LI>
+            <LI><A title="Managing your student loan" href="http://www.ird.govt.nz/studentloans/manage/manage-your-student-loan-index.html">Managing 
+            your student loan</A></LI>
+            <LI><A title="Repayment calculator" href="http://www.ird.govt.nz/calculators/keyword/studentloans/sl-repayment-calculator.html">Repayment 
+            calculator</A></LI>
+            <LI><A href="https://www.studylink.govt.nz/" target="_blank">Apply 
+            for a student loan</A></LI></UL>
+          <P dir="ltr">	&nbsp;</P></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	KiwiSaver</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.kiwisaver.govt.nz/new/about/how/" target="blank">How 
+            does KiwiSaver work?</A></LI>
+            <LI><A href="http://www.kiwisaver.govt.nz/new/situation/" target="blank">Is 
+            KiwiSaver right for you?</A></LI>
+            <LI><A href="http://www.kiwisaver.govt.nz/new/benefits/" target="blank">Benefits 
+            of KiwiSaver</A></LI>
+            <LI><A href="http://www.kiwisaver.govt.nz/new/join/" 
+            target="blank">Joining KiwiSaver</A></LI>
+            <LI><A href="http://www.kiwisaver.govt.nz/already/track-contrib/" 
+            target="blank">Tracking your contributions</A></LI>
+            <LI><A href="http://www.kiwisaver.govt.nz/new/opt-out/" target="blank">Opting 
+            out of KiwiSaver</A></LI></UL></LI>
+          <LI class="four_column_block">
+          <UL>
+            <LI class="more_info no_promo nav_link_header"><A href="http://www.ird.govt.nz/yoursituation-ind">More 
+            for individuals and families</A></LI></UL></LI>
+          <LI class="nav_close"><A href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Close</A></LI></UL></LI>
+        <LI class="top_link" id="businesses"><A class="head_link" href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Businesses 
+        &amp; employers</A>
+        <UL class="nav_content links_section clearfix">
+          <LI class="quick_links">
+          <H4>Quick links</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/tool-for-business">Tool for 
+            Business</A></LI>
+            <LI><A href="http://www.ird.govt.nz/business-income-tax/filing-returns">File 
+            an income tax return</A></LI>
+            <LI><A href="http://www.ird.govt.nz/how-to/irdnumbers?id=footer">Get 
+            an IRD number</A></LI>
+            <LI><A title="Depreciation" href="http://www.ird.govt.nz/business-income-tax/depreciation/depreciation-homepage.html">Depreciation</A></LI>
+            <LI><A href="http://www.ird.govt.nz/forms-guides/number/forms-300-399/ir348-form-ems.html">File 
+            an <EM>Employer monthly schedule (IR348)</EM></A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/make-deductions/deductions/tax-credits-payroll">Tax 
+            credits and donations</A></LI>
+            <LI><A href="http://www.ird.govt.nz/software-developers">Software 
+            developers</A></LI>
+            <LI><A href="http://www.ird.govt.nz/tax-crime">Tax 
+          crime</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">Receiving income</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/business-income-tax">Earning 
+            business income</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/business-income-tax/expenses">Claiming 
+            business expenses</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/business-income-tax/paying-tax">Paying 
+            tax</A></LI>
+            <LI><A href="http://www.ird.govt.nz/provisional-tax">Provisional 
+            tax</A></LI>
+            <LI><A href="http://www.ird.govt.nz/ecommerce-tax">E-commerce and 
+            tax</A></LI>
+            <LI><A href="http://www.ird.govt.nz/toii">Investing money</A></LI>
+            <LI><A href="http://www.ird.govt.nz/business-income-tax/paying-yourself">Paying 
+            yourself</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">GST (Goods and services tax)</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/gst">All about GST</A></LI>
+            <LI><A href="http://www.ird.govt.nz/gst/work-out">Work out your 
+            GST</A></LI>
+            <LI><A href="http://www.ird.govt.nz/gst/return-filing">File your GST 
+            return</A></LI>
+            <LI><A href="http://www.ird.govt.nz/gst/cancelling">Cancel your GST 
+            registration</A></LI>
+            <LI><A href="http://www.ird.govt.nz/gst/gst-registering">Register 
+            for GST</A></LI></UL></LI>
+          <LI class="hidden"></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">Employing staff</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/become-employer">Becoming 
+            an employer</A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/become-employer/register">Register 
+            as an employer</A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/returns-payments">File 
+            returns and make payments</A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/make-deductions">Payroll</A></LI>
+            <LI><A href="http://www.ird.govt.nz/kiwisaver/employers">KiwiSaver 
+            for employers</A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/make-deductions/staff-benefits/allowances">Employee 
+            allowances</A></LI>
+            <LI><A href="http://www.ird.govt.nz/fringe-benefit-tax">Fringe 
+            benefit tax (FBT)</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">International</H4>
+          <UL dir="ltr">
+            <LI><A 
+            href="http://www.ird.govt.nz/international/comingleaving">Coming to 
+            or leaving NZ</A></LI>
+            <LI><A href="http://www.ird.govt.nz/international/residency">Tax 
+            residency and status</A></LI>
+            <LI><A href="http://www.ird.govt.nz/yoursituation-bus/nz-in-australia">Kiwis 
+            in business in Australia</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/yoursituation-bus/bus-aust-nz">Australians 
+            in business in NZ</A></LI>
+            <LI><A href="http://www.ird.govt.nz/international/nrc">Non-resident 
+            contractors / entertainers</A></LI>
+            <LI><A href="http://www.ird.govt.nz/international/nzwithos/fatca/fatca-index.html">Financial 
+            institutions with US customers</A></LI></UL>
+          <P dir="ltr">&nbsp;</P></LI>
+          <LI class="four_column_block">
+          <UL>
+            <LI class="more_info no_promo nav_link_header"><A href="http://www.ird.govt.nz/business-income-tax">More 
+            for businesses and employers</A></LI></UL></LI>
+          <LI class="nav_close"><A href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Close</A></LI></UL></LI>
+        <LI class="top_link" id="non-profit"><A class="head_link" href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Non-profit 
+        organisations</A>
+        <UL class="nav_content links_section clearfix">
+          <LI class="quick_links">
+          <H4>Quick links</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/business-income-tax/filing-returns">File 
+            an income tax return</A></LI>
+            <LI><A href="http://www.ird.govt.nz/non-profit/np-donations/np-donations-index.html">Tax 
+            credits and donations</A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/become-employer/register">Register 
+            as an employer</A></LI>
+            <LI><A href="http://www.ird.govt.nz/how-to/irdnumbers">IRD 
+            numbers</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-gst/income-tax">Income 
+            tax rates</A></LI>
+            <LI><A href="http://www.ird.govt.nz/tax-crime">Tax 
+          crime</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">Staff and volunteers</H4>
+          <UL dir="ltr">
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-staff/honoraria">Honoraria 
+            and taxing payments to volunteers</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-staff/becoming">Becoming 
+            an employer</A></LI>
+            <LI><A href="http://www.ird.govt.nz/payroll-employers/make-deductions">Payroll</A></LI>
+            <LI><A href="http://www.ird.govt.nz/industry-guidelines/payroll-giving/payroll-giving-donee-orgs.html">Payroll 
+            giving</A></LI>
+            <LI><A href="http://www.ird.govt.nz/kiwisaver/employers">KiwiSaver 
+            for employers</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	GST and income</H4>
+          <UL dir="ltr">
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-gst/liable-gst">What 
+            income is liable for GST and income tax?</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-gst/register-gst">Register 
+            for GST</A></LI>
+            <LI><A href="http://www.ird.govt.nz/gst/work-out/work-out-index.html">Work 
+            out your GST return</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-records/returns">File 
+            your GST return</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-gst/exemption">Income tax 
+            and deduction</A></LI></UL></LI>
+          <LI class="hidden"></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">Donations, grants and funding</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/non-profit/np-donations/grants-subsidies">Which 
+            grants and subsidies are liable for tax?</A></LI>
+            <LI><A href="http://www.ird.govt.nz/non-profit/np-donations/claiming">How 
+            to claim tax credits</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-donations/school">School 
+            payment tax credits</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-donations/donee">Tax 
+            credits for donations to donee organisations</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-donations/koha">Koha</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Keeping records and filing returns</H4>
+          <UL dir="ltr">
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-records/returns">GST and 
+            income tax returns</A></LI>
+            <LI><A href="http://www.ird.govt.nz/non-profit/np-records/keep">Your 
+            organisational records</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-records/info">Update or 
+            register your nominated person</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/non-profit/np-gst/obligations">Your 
+            basic tax requirements</A></LI>
+            <LI><A href="http://www.ird.govt.nz/non-profit/np-records/np-records-index.html">Filing 
+            returns and making payments</A></LI></UL></LI>
+          <LI class="four_column_block">
+          <UL>
+            <LI class="more_info no_promo nav_link_header"><A href="http://www.ird.govt.nz/non-profit">More 
+            for non-profit organisations</A></LI></UL></LI>
+          <LI class="nav_close"><A href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Close</A></LI></UL></LI>
+        <LI class="top_link" id="tax-agents"><A class="head_link" href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Tax 
+        agents</A>
+        <UL class="nav_content links_section clearfix">
+          <LI class="quick_links">
+          <H4>Quick links</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/taxagents/products/online-services">Get 
+            it done online</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/products/calculators">Work it 
+            out</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/products/forms-guides">Forms 
+            and guides</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/working/self-service">Self-service 
+            options</A></LI>
+            <LI><A href="http://www.ird.govt.nz/tax-crime">Tax crime</A></LI>
+            <LI><A href="http://www.ird.govt.nz/campaigns/2016/bt-new-gst-services-tax-agents.html">New 
+            GST online services</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Working with us</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/taxagents/role/taxagents-role-index.html">Becoming 
+            a tax agent</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/working/account-managers">Account 
+            managers</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/working/linking-clients">Linking 
+            and delinking clients</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/working/instalment">Instalment 
+            arrangements</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Filing options and tips</H4>
+          <UL dir="ltr">
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/options/efile">E-File</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/options/tips">Tips for 
+            faster processing</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/options/required-file">Required 
+            to file</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/options/eot">Extension 
+            of time arrangements</A></LI></UL></LI>
+          <LI class="hidden"></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Compliance focus</H4>
+          <UL dir="ltr">
+            <LI><A href="http://www.ird.govt.nz/taxagents/compliance/key-focus-areas/key-focus-areas-index.html">Our 
+            key focus areas</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/compliance/basics-everyone/basics-everyone-index.html">Basics 
+            for everyone</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/compliance/basics-business/basics-business-index.html">Basics 
+            for business</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/compliance/get-it-right/get-it-right-index.html">Helping 
+            your clients get it right</A></LI></UL></LI>
+          <LI class="one_column_block">
+          <H4 dir="ltr">	Tax technical</H4>
+          <UL dir="ltr">
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/taxtechnical/fif">Foreign 
+            investment funds (FIF)</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/taxtechnical/pooling">Tax 
+            pooling</A></LI>
+            <LI><A 
+            href="http://www.ird.govt.nz/taxagents/taxtechnical/credit">Credit 
+            transfers</A></LI>
+            <LI><A href="http://www.ird.govt.nz/taxagents/taxtechnical">Other 
+            tax technical information</A></LI></UL></LI>
+          <LI class="four_column_block">
+          <UL>
+            <LI class="more_info no_promo nav_link_header"><A href="http://www.ird.govt.nz/taxagents">More 
+            for tax agents</A></LI></UL></LI>
+          <LI class="nav_close"><A href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#">Close</A></LI></UL></LI></UL>
+<SCRIPT type="text/javascript">
+		$(document).ready(function() {
+			$(".links_section").each(function() {
+				if ($(">.one_column_block", this).size() > 3) {
+					$(">.one_column_block", this).addClass("one_column_block_alt").removeClass("one_column_block");
+				}
+			});
+		});
+		</SCRIPT>
+      	 </DIV><!-- /head_nav --> </DIV><!-- /top_nav --> 
+      <DIV id="see-more">
+      <P>myIR, payments and more</P></DIV><!--ExcludeFromSyndication--> 
+      <DIV id="boxwrapper">
+      <DIV id="sectionheader">
+      <DIV class="breadcrumbs">You are here: <A 
+      href="http://www.ird.govt.nz/">Home</A> ›&nbsp;<A href="http://www.ird.govt.nz/software-developers/">Software 
+      developers</A> ›&nbsp;<A href="http://www.ird.govt.nz/software-developers/technical/">Developer 
+      centre</A></DIV>
+      <HR class="hide">
+      		 
+      <DIV class="sectionTitle"><A href="http://www.ird.govt.nz/software-developers/">Software 
+      developers</A><BR><SPAN class="teReo">Ngā kaihanga pūmanawa 
+      rorohiko</SPAN></DIV></DIV></DIV><!--/ExcludeFromSyndication--> <!--googleon: all--> <!--htdig_noindex--> 
+      <DIV id="sectionNav"><!--ExcludeFromSyndication--> 
+      <DIV id="section-nav">
+      <P>In this section</P></DIV>
+      <DIV id="section-nav-contents">
+      <H2 class="lhs-nav-parent"><A href="http://www.ird.govt.nz/software-developers/">Software 
+      developers</A></H2>
+      <DIV id="lhsNav">
+      <H3 id="select"><A href="http://www.ird.govt.nz/software-developers/technical/">Developer 
+      centre</A></H3>
+      <P><A 
+      href="http://www.ird.govt.nz/software-developers/technical/ir-file/">Payroll 
+      services</A></P>
+      <P><A href="http://www.ird.govt.nz/software-developers/technical/b2b-e-file/">Tax 
+      agent services</A></P>
+      <P><A 
+      href="http://www.ird.govt.nz/software-developers/technical/pts/">PTSI 
+      services</A></P>
+      <P><A 
+      href="http://www.ird.govt.nz/software-developers/technical/wts/">Specification 
+      for banks</A></P>
+      <H3><A href="http://www.ird.govt.nz/software-developers/new/">New to 
+      working with us</A></H3>
+      <H3><A href="http://www.ird.govt.nz/software-developers/about/">About the 
+      SDLU</A></H3>
+      <H3><A 
+      href="http://www.ird.govt.nz/software-developers/availability/">Availability 
+      of services</A></H3>
+      <H3><A href="http://www.ird.govt.nz/software-developers/news/">News and 
+      updates</A></H3></DIV></DIV><!--/ExcludeFromSyndication--></DIV><!--/htdig_noindex--> 
+      <DIV class="third-tier-page" id="page">
+      <DIV id="widthwrapper"><!-- *** vv TEMPLATE SPECIFIC SECTION vv *** --> 
+      <H1>Developer centre</H1>
+      <DIV class="sectionIntroText"></DIV><A name="contentStart"></A> 
+      <DIV class="section">
+      <H3 dir="ltr"><A href="http://www.ird.govt.nz/software-developers/technical/ir-file">Payroll 
+      services</A></H3>
+      <P dir="ltr">The payroll specification documents are issued in December 
+      each year. Download the latest payroll specification and associated 
+      documents here.</P>
+      <H3 dir="ltr"><A href="http://www.ird.govt.nz/software-developers/technical/b2b-e-file">Tax 
+      agents services</A></H3>
+      <P dir="ltr">Find out how to get copies of the E-File specification 
+      document and the Tax agent web service B2B specification document 
+here.</P>
+      <H3 dir="ltr"><A href="http://www.ird.govt.nz/software-developers/technical/pts">Personal 
+      tax summary intermediaries (PTSIs) services</A></H3>
+      <P dir="ltr">Find out how to get a copy of the PTS web service B2B 
+      specification document here.</P>
+      <H3 dir="ltr"><A href="http://www.ird.govt.nz/software-developers/technical/wts/wts-banks.html">Specifications 
+      for banks</A></H3>
+      <P dir="ltr">The withholding tax specification documents are updated every 
+      year and outline how to format non-resident withholding tax (NRWT) and 
+      resident withholding tax (RWT) certificates in a way that we can 
+      accept.</P></DIV><!-- *** ^^ TEMPLATE SPECIFIC SECTION ^^  *** -->  <!--ExcludeFromSyndication--> 
+      <DIV class="page-details"><A class="scroll" id="backtotop" href="http://www.ird.govt.nz/software-developers/technical/technical-specifications-index.html#start"><SPAN>Back 
+      to top</SPAN><SPAN>Date published: 10 Mar 2016</SPAN></A></DIV><!--/ExcludeFromSyndication-->
+      	 </DIV></DIV><!-- Closes page div --> <!--SyndicatedContent--></DIV><!-- Closes content div --> 
+      </DIV><!-- Closes container div --> <!--googleoff: all--> 
+      <DIV id="sidebar">
+      <DIV id="online-services"><IMG width="121" height="55" alt="MyIR Secure Online Services" 
+      src="index_files/myir.png">	 
+      <UL>
+        <LI class="first"><A title="A user ID and password is required to access some online services." 
+        class="login" onclick="_gaq.push(['_trackPageview', '/GA-virtual-pages/myIR-block/Login-link']);" 
+        href="https://e-services.ird.govt.nz/interact/myservices/e-services/welcome"><SPAN>Login</SPAN></A></LI>
+        <LI><A title="" class="forgot" onclick="_gaq.push(['_trackPageview', '/GA-virtual-pages/myIR-block/Forgot-login-link']);" 
+        href="https://e-services.ird.govt.nz/interact/myservices/e-services/welcome"><SPAN>Forgot 
+        login</SPAN></A> |			 <A title="Find out how to register and activate your access to our online services. You can complete most of the registration process online. For your security, a different process applies to activate your account. Opens in a new window." 
+        class="register" onclick="_gaq.push(['_trackPageview', '/GA-virtual-pages/myIR-block/Register-link']);" 
+        href="http://www.ird.govt.nz/online-services/ir-online-services-register.html" 
+        target=""><SPAN>Register</SPAN></A>		 </LI>
+        <LI class="last"><A title="" class="why-myir" onclick="_gaq.push(['_trackPageview', '/GA-virtual-pages/myIR-block/Why-myIR-link']);" 
+        href="http://www.ird.govt.nz/online-services/myir-secure-online-services.html" 
+        target=""><SPAN>myIR services</SPAN></A></LI></UL></DIV>
+      <DIV class="sidebar-alert">
+      <H4>Alert</H4>
+      <UL>
+        <LI>myIR will be unavailable from 10pm on Saturday 14 October until 8am 
+        on Sunday 15 October for system maintenance. We're sorry for any 
+        inconvenience.&nbsp;</LI></UL></DIV>
+      <DIV id="makepayment">
+      <UL>
+        <LI><A title="Pay tax, child support, student loan or KiwiSaver payments to Inland Revenue" 
+        href="http://www.ird.govt.nz/makepayment/makepayment-index.html">Make a 
+        payment<SPAN></SPAN></A></LI></UL></DIV>
+      <DIV id="specialsites">
+      <UL>
+        <LI class="agents"><A title="International tax information" href="http://www.ird.govt.nz/international"><SPAN>International</SPAN></A></LI>
+        <LI class="public"><A title="Have your say on draft rulings and interpretations" 
+        href="http://www.ird.govt.nz/public-consultation"><SPAN>Public 
+        consultation</SPAN></A></LI>
+        <LI class="techtax"><A title="Technical tax area" href="http://www.ird.govt.nz/technical-tax"><SPAN>Technical 
+        tax area</SPAN></A></LI><!--<li class="getitright"><a href="/aboutir/gettingitright" title="Getting it right" ><span>Getting it right</span></a></li>-->
+        		 
+        <LI class="public"><A title="View our online demonstrations and videos" 
+        href="http://www.ird.govt.nz/help/demo"><SPAN>Demos and 
+        videos</SPAN></A></LI>
+        <LI class="public"><A title="Tax Seminars" href="http://www.ird.govt.nz/contact-us/seminars"><SPAN>Tax 
+        seminars</SPAN></A></LI></UL></DIV>
+      <DIV id="sidebarbottom">
+      <DIV id="sidebartop">
+      <DIV id="tabs">
+      <DIV id="tabgetitdone"><A href="http://www.ird.govt.nz/online-services/keyword/"><STRONG>Get 
+      it done online</STRONG><BR>All online services&nbsp;</A><STRONG>›</STRONG> 
+      </DIV>
+      <DIV class="hrbevel"></DIV>
+      <DIV id="tabcalculate"><A href="http://www.ird.govt.nz/calculators/keyword/"><STRONG>Work 
+      it out</STRONG><BR>All calculators and tools</A> <STRONG>›</STRONG> </DIV>
+      <DIV class="hrbevel"></DIV>
+      <DIV id="tabforms"><A 
+      href="http://www.ird.govt.nz/forms-guides/keyword/"><STRONG>Forms and 
+      guides</STRONG><BR>	All forms and guides&nbsp;<STRONG>›</STRONG></A> 
+</DIV>
+      <UL class="forms">
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-f/ir1086-fatca-status-nz-trusts-not-us-persons.html?id=righttabs">FATCA 
+        status of NZ trusts that are not U.S. persons IR1086</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-f/ir1084-fatca-application-collective-investment-vehicles-guidance.html?id=righttabs">Application 
+        of Foreign Account Tax Compliance Act (FATCA)</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-f/ir1083-fatca-us-reportable-accounts-guidance.html?id=righttabs">FATCA 
+        U.S. reportable accounts guidance notes IR1083</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-g/ir1048-guidance-crs-aeoi.html?id=righttabs">Guidance 
+        on the Common Reporting Standard IR1048</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-c/ir1089-accountants-crs.html?id=righttabs">Accountants 
+        and the CRS IR1089</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-c/ir1052-crs-trust-reporting-nzfi.html?id=righttabs">Is 
+        the trust a Reporting NZFI under CRS? IR1052</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-c/ir1049-crs-due-diligence-reporting-obligations.html?id=righttabs">CRS: 
+        Due diligence and reporting obligations IR1049</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-c/ir820-secrecy-certificate.html?id=righttabs">Certificate 
+        of secrecy (IR820)</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-f/ir1053-family-trust-obligations-under-crs.html?id=righttabs">Family 
+        trust obligations under the CRS IR1053</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-c/ir1050-crs-entity-reporting-nzfi.html?id=righttabs">Is 
+        the entity a Reporting NZFI under CRS? IR1050</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-i/ir003nr-form-nonresinc-2017.html?id=righttabs">Income 
+        tax return: Non-resident individual 2017 IR3NR</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-m/ir008d-maori-authorities-dividend-return-2017.html?id=righttabs">FDP 
+        account return - Māori authorities 2017 IR8D</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-a/ir1033-automatic-exchange-of-information.html?id=righttabs">Automatic 
+        exchange of information (IR1033)</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-t/ir1069-tax-agents-guide-for-migrants-and-returning-new-zealanders.html?id=righttabs">Tax 
+        agents' guide for migrants and returning New Zealanders IR1069</A></LI>
+        <LI><A href="http://www.ird.govt.nz/forms-guides/title/forms-m/ir008-maori-authorities-income-tax-return-2017.html?id=righttabs">Income 
+        tax return: Māori authorities 2017 IR8</A></LI></UL>
+      <DIV class="hrbevel"></DIV>
+      <DIV id="tabir"><A accesskey="9" 
+      href="http://www.ird.govt.nz/contact-us/"><STRONG>Contact us</STRONG><BR>
+      	All contact info&nbsp;<STRONG>›</STRONG></A> 
+      </DIV></DIV></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD>
+      <HR class="hide">
+       
+      <DIV id="footwrap">
+      <DIV id="footer"><!-- Footer V2 -->		 
+      <DIV class="footer-col-bold">
+      <UL>
+        <LI><A href="http://www.ird.govt.nz/how-to/irdnumbers/?id=footer">IRD 
+        numbers</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/how-to/taxrates-codes/?id=footer">Tax rates 
+        &amp; codes</A></LI>
+        <LI><A href="http://www.ird.govt.nz/makepayment/makepayment-index.html?id=footer">Making 
+        payments</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/how-to/change-address/?id=footer">Change of 
+        address</A></LI>
+        <LI><A href="http://www.ird.govt.nz/how-to/debt/?id=footer">Manage 
+        financial difficulty</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/how-to/overseas-currency/?id=footer">Overseas 
+        currencies</A></LI>
+        <LI><A href="http://www.ird.govt.nz/how-to/complaints-and-disputes/?id=footer">Disputes 
+        &amp; complaints</A></LI></UL></DIV>
+      <DIV class="footer-col-bold">
+      <UL>
+        <LI><A 
+        href="http://www.ird.govt.nz/how-to/nominate/?id=footer">Nominated 
+        persons</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/how-to/audits/?id=footer">Audits</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/calendars-dates/?id=footer">Calendars and 
+        important dates</A></LI>
+        <LI><A href="http://www.ird.govt.nz/news-updates/?id=footer">News and 
+        updates</A></LI>
+        <LI><A href="http://www.ird.govt.nz/transformation">Transforming 
+        IRD</A></LI>
+        <LI><A 
+      href="http://www.ird.govt.nz/aboutir/suppliers">Suppliers</A></LI></UL></DIV>
+      <DIV class="footer-col">
+      <UL>
+        <LI><A href="http://www.ird.govt.nz/help/?id=footer">Help</A></LI>
+        <LI><A accesskey="2" href="http://www.ird.govt.nz/about-this-site/sitemap/?id=footer">Site 
+        map</A></LI>
+        <LI><A title="This link will open in a new window. " href="http://www.ird.govt.nz/about-this-site/site-design/?id=footer" 
+        target="_blank">Site design</A></LI>
+        <LI><A href="http://www.ird.govt.nz/about-this-site/conditions/?id=footer">Conditions 
+        of use</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/about-this-site/privacy/?id=footer">Your 
+        privacy</A></LI>
+        <LI><A href="http://www.ird.govt.nz/online-services/activity/feedback/online-website-feedback.html?id=footer">Website 
+        feedback form</A></LI>
+        <LI><A 
+        href="http://www.ird.govt.nz/related-sites/keyword/?id=footer">Related 
+        websites</A></LI></UL></DIV>
+      <DIV class="footer-col"><A class="twitter-follow-button" href="https://twitter.com/NZInlandRevenue" 
+      data-show-count="false">Follow @NZInlandRevenue</A>			 
+<SCRIPT>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</SCRIPT>
+      			 
+      <P></P>
+      <DIV class="g-ytsubscribe" data-count="default" data-layout="default" 
+      data-channel="InlandRevenueNZ"></DIV></DIV>
+      <DIV class="clear"></DIV>
+      <DIV class="lock"></DIV>
+      <P class="moreinfo">For more info on government services go to <A title="This link will open in a new window." 
+      accesskey="/" 
+      href="http://newzealand.govt.nz/?id=footer">newzealand.govt.nz</A></P>
+      <P class="copyright">© <A href="http://www.ird.govt.nz/about-this-site/conditions?id=footer">Copyright 
+      2017</A> Inland Revenue</P></DIV></DIV></TD></TR></TBODY></TABLE>
+<SCRIPT type="text/javascript">
+$(document).ready(function(){
+	
+	if($("a[href*='OnlinePaymentServlet']").length>0 || $("a[href*='orbitremit']").length>0){
+		$.ajax({
+			  url: '/cgi-bin/vtoken.cgi',
+			  success: function(data) {
+			    var tok = $(data).find("VTOKEN").text();
+	
+				// append the token to the end of the URL
+				
+				// Append to QValent
+				$("a[href*='OnlinePaymentServlet']").each(function(i,el){
+					$(el).attr('href',$(el).attr('href') + "&CP_vtoken=" + tok)
+				})
+				
+				// Append to Orbit Remit
+				$("a[href*='orbitremit']").each(function(i,el){
+					$(el).attr('href',$(el).attr('href') + "?vtoken=" + tok)
+				})
+			  }
+			});
+	};
+})
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+  // track a page view (Google Analytics)
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-235836-1']);
+  _gaq.push(['_setLocalRemoteServerMode']);
+  _gaq.push(['_setAllowLinker', false]);
+  _gaq.push(['_setDomainName','.ird.govt.nz']); 
+  _gaq.push(['_trackPageLoadTime']);
+  _gaq.push(['_trackPageview']);
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+//add unique ids to mega menu items
+$(document).ready(function(){
+    $('.head_nav ul li a').each(function(index, element) {
+    var linkHref = $(element).attr("href");
+    $(element).attr("href", linkHref + "?id=201405MegaMenu");
+       });
+  });
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+  // tracks a page event (AJAX etc)
+  function trackEvent(category, action, label, value) {
+    // reform string, replace spaces with dashes
+    var reformedCategory = jQuery.trim(category).toLowerCase();
+    var reformedAction = jQuery.trim(action).toLowerCase();
+    var reformedLabel = jQuery.trim(label).toLowerCase();
+    // value is optional, and maybe NaN, therefore have robust error checking
+    var reformedValue = '';
+    try {
+      if (value > 0) {
+        reformedValue = parseInt(value); // needs to be an int, or blank string
+      }
+      else {
+        reformedValue = '';
+      }
+    } catch(err) {
+      reformedValue = '';
+    }
+    
+    // test for Google Analytics (async)
+    if (typeof(_gaq) != 'undefined') {
+      if (reformedValue == '') {
+        _gaq.push(['_trackEvent', reformedCategory, reformedAction, reformedLabel]);
+      }
+      else {
+        _gaq.push(['_trackEvent', reformedCategory, reformedAction, reformedLabel, parseInt(reformedValue)]);
+      }
+      return true;
+    }
+     // else, if no analytics
+    return false;
+  }
+  
+  // tracks a page view (with virtual URL)
+  function trackPage(string) {
+    // reform string, replace spaces with dashes
+    var reformedString = jQuery.trim(string).toLowerCase();
+  
+    // test for Google Analytics (async)
+    if (typeof(_gaq) != 'undefined') {
+      _gaq.push(['_trackPageview', reformedString]);
+      return true;
+    }
+     // else, if no analytics
+    return false;
+  }
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+  //
+  // Custom javascript events for external links + mailto links
+  //
+  $(document).ready(function() {
+  
+    // Some basic regex (no FLV)
+    var isInternal  = new RegExp("^(https?):\/\/" + window.location.host, "i");
+    var isIrd       = new RegExp("^(https?):\/\/www\\.ird\\.govt\\.nz", "i");
+    var isMailto    = new RegExp("^mailto:", "i");
+    var isDownload  = new RegExp("\\.(7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|rtf|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip)(\\?mod=ajperes)?$", "i");
+    var wcmDownload1 = new RegExp("^\/resources\/([a-zA-Z0-9_])*\/([a-zA-Z0-9_])*\/([a-zA-Z0-9_])*\/", "i");
+    var wcmDownload2 = new RegExp("^\/wps\/wcm\/connect\/([a-zA-Z0-9_])*\/", "i");
+
+    // Creating custom :external selector
+    $.expr[':'].external = function(obj) {
+      return !isInternal.test(obj.href) && !isIrd.test(obj.href) && !isDownload.test(obj.href) && !isMailto.test(obj.href) && !obj.href.match(/^javascript\:/);
+    };
+    // Creating custom :mailto selector
+    $.expr[':'].mailto = function(obj) {
+      return isMailto.test(obj.href);
+      //return obj.href.match(/^mailto\:/);
+    };
+    // Create custom :download selector
+    $.expr[':'].download = function(obj) {
+      return isDownload.test(obj.href);
+    };
+    // bind to external clicks
+    $("a:external").click(function() {
+      trackEvent('external-links', 'click', this.href);
+      // add small delay to allow event tracking
+      pauseJS(400);
+    });
+    // bind to mailto clicks
+    $("a:mailto").click(function() {
+      trackEvent('mailto-links', 'click', this.href.substring(7));
+    });
+    // bind to download clicks
+    $("a:download").click(function() {
+      var extension = isDownload.exec(this.href);
+      var file = this.href.replace(isInternal, '');
+      file = file.replace(wcmDownload1, '');
+      file = file.replace(wcmDownload2, '');
+      trackEvent('downloads', extension[1], file);
+      // add small delay to allow event tracking
+      pauseJS(400);
+    });
+    // bind to colorbox onload
+    $(document).bind('cbox_complete', function(event, data) {
+      trackEvent('overlay', 'open', document.location.href.replace(isInternal, ''));
+    });
+    // bind to facebox clicks
+    $('.facebox').bind('click', function() {
+        var pop_name=$(this).attr("href").substring(1);
+        trackEvent('facebox', 'popup', pop_name , '');
+    });
+    // track external bank link virtual pageviews
+    $(".banklink").click(function() {
+        _gaq.push(['_trackPageview', '/GA-virtual-pages/make-a-payment/pay-from-overseas-external-links']);
+    });
+    // track new contact us page channel option
+    $('.contact_items ul.clearfix li a').click(function(){
+        trackEvent('contact_us','contact_channel', $(this).find('span').text());
+    });
+});
+  
+  function pauseJS(timeInMilliS) {
+    var date = new Date();
+    var curDate = null;
+    do { curDate = new Date(); }
+    while(curDate-date < timeInMilliS);
+  }
+</SCRIPT>
+ <!-- Hotjar Tracking Code --> 
+<SCRIPT>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:559714,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</SCRIPT>
+ <!-- End of Hotjar Tracking Code --> <!-- Version: 008 - 2017 September 27 @ 13:30PM --> 
+</BODY></HTML>

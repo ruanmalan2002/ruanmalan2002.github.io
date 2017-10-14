@@ -1,0 +1,12 @@
+#boxwrapper {
+	background: url("/resources/f/d/fdb545004ba37660b9cebd9ef8e4b077/brandboxbg.gif") repeat-x left top rgb(41, 147, 160); margin-bottom: 10px;
+}
+#boxwrapper #sectionheader {
+	background: url("/resources/0/e/0e1aef004ba37664ba43bf9ef8e4b077/greenboxbg.jpg") no-repeat right top; padding-bottom: 8px;
+}
+#boxwrapper #sectionheader .breadcrumbs {
+	padding-bottom: 2px;
+}
+#boxwrapper #sectionheader .breadcrumbs a {
+	padding-bottom: 2px;
+}
